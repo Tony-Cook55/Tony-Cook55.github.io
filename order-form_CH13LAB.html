@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+
+
+
+    <link rel="stylesheet" type="text/css" href="order-form_CH13LAB_STYLESHEET.css">
+    <title>Order Form</title>
+
+  </head>
+
+
+
+
+
+
+
+
+
+<body>
+
+
+
+<div class="container all" >
+
+
+
+
+
+<h1 class="pt-5">Order Form</h1>
+
+
+
+<form h id="order-form" action="/order" method="post">
+
+<hr>
+<!-- ```````````````````````````````````` NAME AND PHONE NUMBER ```````````````````````````````````````-->
+  <fieldset>
+    <legend>Personal Information</legend>
+      <div class="form-group">
+        <label for="given-name" class="form-label">Given Name:</label>
+        <input type="text" name="given-name" id="given-name"  class="form-control" 
+          required placeholder="Given Name" autocomplete="name">
+      </div>
+
+
+      <div class="form-group">
+        <label for="family-name" class="form-label">Family Name:</label>
+        <input type="text" name="family-name" id="family-name"  class="form-control"  
+          placeholder="Family Name" autocomplete="name">
+      </div>
+
+
+      <div class="form-group">
+        <label for="phone-number" class="form-label">Phone Number:</label>
+        <input type="tel" name="phone-number" id="phone-number" class="form-control"  
+          required placeholder="Phone-Number" autocomplete="tel">
+      </div>
+  </fieldset>
+<!-- ```````````````````````````````````` NAME AND PHONE NUMBER ```````````````````````````````````````-->
+
+
+
+
+
+
+
+
+
+
+
+<hr>
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ EMAIL ADDRESS AND PASSWORD ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+  <fieldset>
+    <legend>Credentials</legend>
+
+
+      <div class="form-group">
+        <label for="email" class="form-label">Email address:</label>
+        <input type="email" class="form-control" name="email" id="email" placeholder="Email" 
+          autocomplete="email" required>
+      </div>
+
+
+      <div class="form-group">
+        <label for="email-confirmation" class="form-label">Confirm E-mail:</label>
+        <input type="email" class="form-control" name="email-confirmation" id="email-confirmation" 
+          autocomplete="email" required placeholder="Confirm Email">
+
+      </div>
+
+
+
+
+
+      <div class="form-group">
+        <label for="password" class="form-label">Password:</label>
+        <input type="password" class="form-control" name="password" id="password" placeholder="Password" 
+          autocomplete="new-password" required>
+      </div>
+
+
+      <div class="form-group">
+        <label for="password-confirmation" class="form-label">Confirm Password:</label>
+        <input type="password" class="form-control" name="password-confirmation" id="password-confirmation" 
+          autocomplete="new-password" required placeholder="Confirm Password">
+      </div>
+  </fieldset>
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ EMAIL ADDRESS AND PASSWORD ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+
+
+
+
+
+
+
+<hr>
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! CREDIT CARD CRAP !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<fieldset>
+  <legend>Billing Information</legend>
+
+
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-4 col-sm-6">
+          <div class="form-group">
+            <label for="credit-card-num" class="form-label">Credit Card Number:</label>
+            <input id="credit-card-num" name="credit-card-num" type="tel" inputmode="numeric" 
+              pattern="[0-9\s]{13,19}" autocomplete="cc-number" maxlength="19" 
+              placeholder="xxxx xxxx xxxx xxxx" class="form-control" required>
+          </div>
+        </div>
+
+
+        <div class="col-md-4 col-sm-6">
+          <div class="form-group">
+            <label for="credit-card-num" class="form-label">Expiration Date:</label>
+            <input type="text" id="inputExpDate" placeholder="MM / YY" maxlength="7" class="form-control" 
+              autocomplete="cc-exp" required>
+          </div>
+        </div>
+
+
+            <div class="col-md-4 col-sm-6">
+          <div class="form-group">
+            <label for="cvv" class="form-label">CVV Code <em>(3 numbers on the back)</em>:</label>
+            <input id="cvv" name="cvv" type="text"  maxlength="3" autocomplete="cc-csc" placeholder="123" 
+              class="form-control" required>
+          </div>
+        </div>
+      </div>
+    </div>
+</fieldset>
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! CREDIT CARD CRAP !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+
+
+
+
+
+
+
+<hr>
+<!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ BILLING ADDRESS ITEMS @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+<fieldset>
+  <legend>Billing Address</legend>
+
+
+  <div class="container">
+    <div class="row">
+
+      <div class="col-md-4 col-sm-6">
+        <div class="form-group">
+          <label for="billing-street-address" class="form-label">Street Address:</label>
+          <input id="billing-street-address" name="billing-street-address" type="text"  
+            placeholder="Street Address" class="form-control" required autocomplete="street-address">
+        </div>
+      </div>
+
+
+      <div class="col-md-4 col-sm-6">
+        <div class="form-group">
+          <label for="billing-address-2" class="form-label">Address Line #2 <em>Apt, Studio, Etc</em>:</label>
+          <input type="text" id="billing-address-2" name="billing-address-2" placeholder="Enter" class="form-control"
+            autocomplete="street-address">
+        </div>
+      </div>
+
+
+      <div class="col-md-4 col-sm-6">
+        <div class="form-group">
+          <label for="billing-zip" class="form-label">Zip Code:</label>
+          <input id="billing-zip" name="billing-zip" type="tel"  
+            placeholder="Enter zip code" class="form-control" required autocomplete="postal-code">
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+  <div class="container">
+    <div class="row">
+
+      <div class="col-md-6 col-sm-6">
+        <div class="form-group">
+          <label for="billing-city" class="form-label">City:</label>
+          <input id="billing-city" name="billing-city" type="text"  
+            placeholder="City" class="form-control" required autocomplete="street-address">
+        </div>
+      </div>
+
+
+      <div class="col-md-6 col-sm-6">
+        <div class="form-group">
+          <label for="billing-state" class="form-label">State:</label>
+
+          <select name="billing-states" id="billing-states" class="form-control" required >
+            <option disabled selected value> -- Please Choose a State -- </option>
+            <option value="stl">Saint Louis</option>
+            <option value="illinois">Illinois</option>
+          </select>
+
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+</fieldset>
+
+<!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ BILLING ADDRESS ITEMS @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+
+
+
+
+
+<hr>
+<!-- ###################################### SHIPPING ADDRESS ########################################## -->
+<fieldset>
+  <legend>Shipping Address</legend>
+
+
+  <div class="container">
+    <div class="row">
+
+      <div class="col-md-4 col-sm-6">
+        <div class="form-group">
+          <label for="shipping-street-address">Street Address:</label>
+          <input id="shipping-street-address" name="shipping-street-address" type="text"  
+            placeholder="Street Address" class="form-control" required autocomplete="street-address">
+        </div>
+      </div>
+
+
+      <div class="col-md-4 col-sm-6">
+        <div class="form-group">
+          <label for="shipping-address-2">Address Line #2 <em>Apt, Studio, Etc</em>:</label>
+          <input type="text" id="shipping-address-2" name="shipping-address-2" placeholder="Enter" class="form-control"
+            autocomplete="street-address">
+        </div>
+      </div>
+
+
+      <div class="col-md-4 col-sm-6">
+        <div class="form-group">
+          <label for="shipping-zip" class="form-label">Zip Code:</label>
+          <input id="shipping-zip" name="shipping-zip" type="tel"  
+            placeholder="Enter zip code" class="form-control" required autocomplete="postal-code">
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+  <div class="container">
+    <div class="row">
+
+      <div class="col-md-3 col-sm-6">
+        <div class="form-group">
+          <label for="shipping-city">City:</label>
+          <input id="shipping-city" name="shipping-city" type="text"  
+            placeholder="City" class="form-control" required autocomplete="street-address">
+        </div>
+      </div>
+
+
+      <div class="col-md-3 col-sm-6">
+        <div class="form-group">
+          <label for="shipping-state">State:</label>
+
+          <select name="shipping-states" id="shipping-states" class="form-control" required >
+            <option disabled selected value> --- Choose a State --- </option>
+            <option value="stl">Saint Louis</option>
+            <option value="illinois">Illinois</option>
+          </select>
+
+        </div>
+      </div>
+
+
+
+
+      <div class="col-md-3 col-sm-6 same-address-container">
+        <div class="form-group">
+
+          <label for="same-address">Same as Billing Address?</label>
+        </div>
+      </div>
+
+
+      <div class="col-md-3 col-sm-6 same-address-container">
+        <div class="form-group">
+
+          <input id="same-address" name="same-address" type="checkbox" class="form-control same-checkbox" required>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</fieldset>
+
+<!-- ################################### SHIPPING ADDRESS ITEMS ###################################### -->
+
+
+
+
+
+
+<button type="submit" class="btn btn-primary my-4">Submit</button>
+
+
+</form>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
