@@ -223,10 +223,12 @@ body{
 .text-of-me{
   font-size: 4vw;
   font-family: 'Fredoka', sans-serif;
+
+  text-align: center;
   
 
-  padding-left: 40px;
-  padding-right: 30px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .me-in-snow{
@@ -252,15 +254,17 @@ body{
     padding-top: 30px;
 
     /* makes them the same size on bigger screens */
-    width: 837px;
-    height: 694px;
+    width: 1000px;
+
   }
 
 
   .text-of-me{
 
-    padding-left: 55px;
-    padding-right: 55px;
+    padding-left: 85px;
+    padding-right: 85px;
+
+
 
     font-size: 2vw;
   }
