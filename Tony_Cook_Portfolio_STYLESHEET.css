@@ -1,0 +1,281 @@
+
+/* **************************** COLORS FOR 70's LOOK ********************************* */
+
+body{
+  background-color: #f6dbac;
+}
+
+.picture-of-me{
+  background-color: #efbb4a;
+}
+
+.ranken{
+  background-color: #df3b30;
+}
+
+.explore-text{
+  background-color: #259fa4;
+}
+/* **************************** COLORS FOR 70's LOOK ********************************* */
+
+
+
+
+
+
+
+
+
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ VIDEO ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* holds the video */
+.video-container {
+  height: 50vh;
+  position: relative;
+  overflow: hidden;
+
+  @media(min-width: 600px) {
+    height: 100vh;
+  }
+}
+
+
+/* the actual css for the video */
+video {
+  object-fit: cover; 
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+
+
+* {
+  box-sizing: border-box;
+}
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ VIDEO ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+
+
+
+
+
+
+
+
+
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! HEADER TEXT ON VID !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+
+
+/* This changes the top text that is on the home page */
+h1 {
+  text-transform: uppercase;
+  font-weight: 900;
+  margin: 0 0 1rem;
+  padding: 0;
+  line-height: 1;
+  font-family: 'Shrikhand', cursive;
+  /* font-family: Futura, Helvetica, sans-serif;  */
+  font-size: 6vw;
+
+  text-shadow: 2px 2px 0px #ffffff, 3.5px 3.5px 0px #000000;
+}
+
+
+
+/* when the screen is above the smallest size sets The header text shadow accordingly */
+@media screen and (min-width: 600px) {
+
+h1 {
+  text-shadow: 5px 5px 0px #ffffff, 8px 8px 0px #000000;
+  }
+}
+
+/* this is the container for the heading text on the video by default makes it go to the center of the screen */
+.callout {
+  position: relative;
+  display: flex;
+  height: 100%;
+  text-align: center;
+  z-index: 10;
+  position: relative;
+
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 50px;
+
+
+  margin-left: 25px;
+  margin-right: 25px;
+
+  color: #E63E23;
+
+
+}
+
+
+
+/* this is the lil explanation about me under header text gets font and different shadow */
+.underHeader{
+  font-family: 'Shrikhand', cursive;
+  text-shadow: 2px 2px 0px #000000, 2.5px 2.5px 0px #000000;
+  color: #ffffff;
+  word-spacing: 3px;
+}
+
+
+/* when the screen is above the smallest size sets text to go to the right side of screen */
+@media screen and (min-width: 600px) {
+  .callout {
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+    margin-left: 25px;
+    margin-right: 25px;
+    padding-bottom: 100px;
+  }
+}
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! HEADER TEXT ON VID !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+
+
+
+
+
+
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ LINKS @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+
+
+/* This is the container for the links sets them to the bottom right and adjusts position */
+.support {
+  position: fixed;
+  bottom: 85px;
+  right: 20px;
+  text-transform: uppercase;
+  font-size: 10px;
+  letter-spacing: 1px;
+  text-align: right;
+
+  position: relative;
+  z-index: 10;
+
+}
+
+/* links text and fancy transition for hover */
+.support a {
+  box-shadow: inset 0 0 0 0 #F0A91A;
+  color: #60C3A7;
+
+  transition: color .5s ease-in-out, box-shadow .5s ease-in-out;
+}
+
+/* when focused or hovered over does transition */
+.support a:hover, .support a:focus {
+  box-shadow: inset 150px 0 0 0 #E63E23;
+  color: #FFFF;
+}
+
+/* when the screen is above the smallest size sets links to be bigger */
+@media screen and (min-width: 600px) {
+  .support {
+    bottom: 135px;
+    font-size: 15px;
+  }
+}
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ LINKS @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+
+
+
+
+
+
+
+
+
+/* <!-- ########################################## BACK AND FOURTH SECTIONS ################################### --> */
+.pic-of-me{
+  width: 100%;
+
+
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.text-of-me{
+  font-size: 4vw;
+  font-family: 'Fredoka', sans-serif;
+  
+
+  padding-left: 40px;
+  padding-right: 30px;
+}
+
+.me-in-snow{
+  padding-top: 30px;
+}
+
+.ranken-pic{
+  /* only adds padding to the tony hawk pic when screen is small */
+  padding-bottom: 30px;
+}
+
+
+
+
+/* when the screen is above the smallest size sets links to be bigger */
+@media screen and (min-width: 600px) {
+
+  .pic-of-me{
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+  }
+
+
+  .text-of-me{
+
+    padding-left: 55px;
+    padding-right: 55px;
+
+    font-size: 2vw;
+  }
+
+}
+/* <!-- ########################################## BACK AND FOURTH SECTIONS ################################### --> */
+
+
+
+
+.explore-text{
+  padding-bottom: 30px;
+
+  /* gets rid of margin at bottom */
+  margin-bottom: -50px;
+}
+
+
+
+
+
+
+
+
+
+footer{
+  background-color: #60C3A7;
+}
+
+.copyright{
+  background-color: #00000033
+}
