@@ -1,0 +1,235 @@
+
+
+/* **************************** COLORS FOR 70's LOOK ********************************* */
+
+body{
+  background-color: #f6dbac;
+}
+
+.navbar-brand h1{
+  color: #259fa4;
+  text-shadow: 2px 2px 0px #ffffff, 4px 4px 0px #000000;    
+}
+@media screen and (min-width: 600px) {
+
+  .navbar-brand h1{
+    text-shadow: 5px 5px 0px #ffffff, 8px 8px 0px #000000;
+    }
+}
+
+/* adds the background picture for the navbar */
+nav{
+  background-image: url("pictures/record_label_pic/70s-bold-multicolor-stripes-retro-wallpaper-mural-Plain-scaled.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.call-me{
+  background-color: #259fa4;
+}
+
+.email{
+  background-color: #df3b30;
+}
+
+.discord{
+  background-color: #efbb4a;
+  color: #f6dbac;
+}
+
+.contact_infos_containers{
+  color: #f6dbac;
+}
+/* **************************** COLORS FOR 70's LOOK ********************************* */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ~~~~~~~~~~~~~~~~~~ NAVBAR ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.navbar-brand h1{
+  text-transform: uppercase;
+  font-weight: 900;
+  margin: 0 0 1rem;
+  padding: 0;
+  line-height: 1;
+  font-family: 'Shrikhand', cursive;
+  /* font-family: Futura, Helvetica, sans-serif;  */
+  font-size: 6vw;
+  
+  color: #E63E23;
+  text-shadow: 2px 2px 0px #000000, 4px 4px 0px #000000;    
+
+}
+
+@media screen and (min-width: 600px) {
+  /* makes the shadow bigger to fit the bigger font */
+  .navbar-brand h1{
+    text-shadow: 5px 5px 0px #000000, 8px 8px 0px #000000;
+    }
+}
+
+
+
+
+.nav-item{
+text-transform: uppercase;
+
+
+
+font-family: 'Shrikhand', cursive;  
+font-size: 20px;
+
+color: #E63E23;
+}
+/* N~~~~~~~~~~~~~~~~~~ NAVBAR ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+
+
+
+
+
+/* This changes the top text that is on the home page */
+h1 {
+text-transform: uppercase;
+font-weight: 900;
+margin: 0 0 1rem;
+padding: 0;
+line-height: 1;
+font-family: 'Shrikhand', cursive;
+/* font-family: Futura, Helvetica, sans-serif;  */
+font-size: 6vw;
+
+color: #000000;
+
+text-shadow: 2px 2px 0px #ffffff, 3.5px 3.5px 0px #000000;
+}
+
+
+
+/* when the screen is above the smallest size sets The header text shadow accordingly */
+@media screen and (min-width: 600px) {
+
+h1 {
+  text-shadow: 5px 5px 0px #ffffff, 8px 8px 0px #000000;
+  }
+}
+
+
+
+
+
+
+
+
+
+/* Big Header text CALL ~ EMAIL ~ DISCORD */ 
+h2{
+  text-transform: uppercase;
+font-weight: 900;
+margin: 0 0 1rem;
+padding: 0;
+line-height: 1;
+font-family: 'Shrikhand', cursive;
+/* font-family: Futura, Helvetica, sans-serif;  */
+font-size: 5vw;
+
+color: black;
+}
+
+
+/* The actual info */
+h3{
+  font-family: 'Fredoka', sans-serif;
+  color: black;
+}
+
+/* Discord Link Color */
+a h3{
+  color: black;
+}
+
+/* ICONS */
+i{
+  font-size: 5vw;
+  color: black;
+}
+
+
+@media screen and (min-width: 600px) {
+  h2{
+  font-size: 4vw;
+  }
+
+  /* ICONS */
+  i{
+    font-size: 4vw;
+  }
+}
+
+
+/* This is to add space between the contact info on small screens */
+.contact_infos_containers{
+  padding: 40px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+iframe{
+  min-width:100%;
+  max-width:100%;
+  height:539px;
+  border:none;
+}
+
+
+
+
+
+
+
+
+
+
+
+footer{
+  /* This gets rid of the tiny padding the form adds and cant get rid of */
+  margin-top: -6px;
+
+  background-color: #60C3A7;
+}
+
+.copyright{
+  background-color: #00000033
+}
