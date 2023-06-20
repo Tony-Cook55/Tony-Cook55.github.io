@@ -1,0 +1,358 @@
+
+
+
+
+
+
+*{
+  font-family:sans-serif ;
+}
+
+
+
+.container-for-all{
+  min-height: 100vh;
+}
+
+
+
+body{
+  background-color: #F2FCFF;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+  /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ HEADER @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+.logo{
+  width: 150px;
+  height: 150px;
+}
+
+
+
+header{
+  background-color: #febeb0;
+  display: flex;
+  
+    /* centers the text */
+  align-items:center;
+
+}
+
+
+.header-text{
+  padding: .10em;
+  margin-left: 1em;
+  font-size: 33px;
+
+  vertical-align: middle;
+}
+
+  /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+
+
+
+
+
+
+
+  /* ))))))))))))))))))))))))))))))))))) NAVIGATION BAR )))))))))))))))))))))))))))))))))))))))))))) */
+nav{
+  background-color: #001D24;
+
+
+  display: flex ;
+  margin: 0;
+  padding: 0;
+  position: relative;
+
+  flex-direction: column;
+}
+
+
+.navbar-list{
+  color: #febeb0;
+  list-style-type: none;
+}
+
+
+.navbar-items{
+  display: block;
+  flex: 0 0 auto;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-items:hover, .navbar-items:focus{
+  background-color: gray;
+}
+.navbar-items a{
+  text-decoration: none;
+  color:white;
+}
+  /* )))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))) */
+
+
+
+
+
+
+/* ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ ASIDE ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */
+.aside-link-list{
+  list-style-type: none;
+}
+
+.aside-link{
+  padding: 10px 0;
+}
+/* ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */
+
+
+
+
+
+
+
+  /* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& MAIN &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
+main{
+  display: flex;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  flex-direction: column;
+
+
+  align-items: center;
+}
+
+
+.three-sections{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+
+}
+
+.section-one-items, .section-two-items, .section-three-items{
+  margin: 0 10px;
+}
+
+.yellow-star{
+  color: yellow;
+  -webkit-text-stroke: black 2px;
+}
+
+/* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
+
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! RECORD PICTURES !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+.products1-2{
+  display: flex;
+  padding-top: 10px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  /* aligns the names of the singer */
+  text-align: center;
+}
+
+.products3-4{
+  display: flex;
+  padding-bottom: 10px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  /* aligns the names of the singer */
+  text-align: center;
+}
+
+.product{
+  padding: 10px 110px;
+}
+
+
+.artist-name{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.price{
+  font-style: italic;
+}
+
+.frank{
+  width: 200px;
+  height: 200px;
+  
+  order: 1;
+}
+
+.dean{
+  width: 200px;
+  height: 200px;
+
+  order: 2;
+}
+
+.paul{
+  width: 200px;
+  height: 200px;
+
+  order: 3;
+  
+}
+
+.andy{
+  width: 200px;
+  height: 200px;
+
+  order: 4;
+}
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+
+
+footer{
+  font-size: 25px;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 600px){
+  nav{
+
+  
+    display: flex ;
+
+    margin: 0;
+    padding: 0;
+
+    flex-direction: column;
+
+  }
+}
+
+
+
+
+
+
+@media only screen and (min-width: 1200px){
+
+  /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ LOGO PICTURE ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+  .logo{
+    width: 250px;
+    height: 250px;
+  }
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+  /* @@@@@@@@@@@@@@@@@@@@@@@@ TONY"S RECORD EMPORIUM TEXT IN HEADER @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+  .header-text{
+    font-size: 60px;
+    }
+  /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+  
+  /* ))))))))))))))))))))))))))))))))))) NAVIGATION BAR )))))))))))))))))))))))))))))))))))))))))))) */
+  nav{
+ 
+  
+    display: flex ;
+    justify-content:space-evenly;
+    align-items: center;
+
+    margin: 0;
+    padding: 0;
+
+    flex-direction: row;
+  }
+  /* )))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))) */
+
+
+
+
+
+  /* !!!!!!!!!!! Makes the Aside go on the right side of the main whenever your in browser  !!!!! */
+  .container-for-aside-main{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .main-content{
+    order: 1;
+  }
+  .aside-content{
+    order: 2;
+    width: 400px;
+  }
+  /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+}
+
+
+
+
+@media only screen and (min-width: 2500px){
+
+  /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ LOGO PICTURE ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+  .logo{
+    width: 300px;
+    height: 300px;
+  }
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+
+  /* @@@@@@@@@@@@@@@@@@@@@@@@ TONY"S RECORD EMPORIUM TEXT IN HEADER @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+  .header-text{
+    font-size: 100px;
+    }
+  /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+
+
+  /* ))))))))))))))))))))))))))))))))))) NAVIGATION BAR )))))))))))))))))))))))))))))))))))))))))))) */
+  nav{
+
+  
+    display: flex ;
+    justify-content:space-evenly;
+    align-items: center;
+
+    margin: 0;
+    padding: 0;
+
+    flex-direction: row;
+  }
+  /* )))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))) */
+
+
+    /* !!!!!!!!!!! Makes the Aside go on the right side of the main whenever your in browser  !!!!! */
+    .container-for-aside-main{
+      display: flex;
+      flex-direction: row;
+    }
+  
+    .main-content{
+      order: 1;
+    }
+    .aside-content{
+      order: 2;
+      width: 400px;
+    }
+    /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+}

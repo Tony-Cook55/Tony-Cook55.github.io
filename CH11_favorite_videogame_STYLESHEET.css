@@ -1,0 +1,118 @@
+
+
+
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! NAVBAR !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+nav{
+
+}
+
+.navbar-brand{
+  color: rgb(0, 0, 0);
+  font-size: 30px;
+  padding-right: 20px;
+}
+
+
+.nav-link{
+  font-size: 20px;
+}
+
+.logo{
+  width: 200px;
+  height: 80px;
+
+
+}
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+
+
+
+/* ````````````````````````````````````````` JUMBOTRON `````````````````````````````````````````````` */
+
+
+
+.header-logo-pic{
+
+  margin-top: 50px;
+  margin-bottom: 50px;
+
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+.background-pic{
+  background-image: url("pictures/driver-san-francisco-car.jpg");
+  max-width: 100%;
+  height: auto;
+
+  /* this makes the picture span the whole screen and shrinks and expands with screen */
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+
+}
+
+/* ```````````````````````````````````````````````````````````````````````````````````````````````````` */
+
+
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 3 COLUMNS @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+
+.three-columns{
+
+}
+
+
+
+
+.xbox-logo, .ps-logo, .pc-logo{
+  max-width: 100%;
+  height: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  
+}
+
+
+
+.available{
+  margin-top: 30px;
+
+  /*this changes the font when page shrinks/grows */
+  font-size: 5vw
+}
+
+
+
+.card{
+padding-bottom: 10px;
+
+
+
+}
+
+.card-img-top{
+  margin-top: 0;
+
+
+}
+
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 3 COLUMNS @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+
+
+
+
+
+
+
+
+
