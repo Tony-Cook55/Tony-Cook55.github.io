@@ -1,0 +1,177 @@
+
+
+
+
+
+
+/* ``````````````````````````````````````````` NAV ``````````````````````````````````````````` */
+.nav-header-name a{
+  font-size: 30px;
+
+  
+  text-shadow: 0 1px 0px #eb452b, 1px 0 0px #efa032, 1px 2px 1px #46b59b, 2px 1px 1px #017e7f, 2px 3px 2px #052939, 3px 2px 2px #c11a2b, 3px 4px 2px #eb452b, 4px 3px 3px #efa032, 4px 5px 3px #46b59b, 5px 4px 2px #052939, 5px 6px 2px #c11a2b, 6px 5px 2px #eb452b, 6px 7px 1px #efa032, 7px 6px 1px #46b59b, 7px 8px 0px #017e7f, 8px 7px 0px #052939;
+  color: #69DCE1;
+}
+
+.active{
+  text-decoration: underline;
+}
+
+
+header{
+  font-size: 20px;
+}
+/* ````````````````````````````````````````````````````````````````````````````````````````````````` */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 4 CARDS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+
+.four-columns{
+  background-image: url("pictures/wavy-70s-background.png");
+  max-width: 100%;
+  height: auto;
+
+}
+
+
+
+
+.card{
+  width: 18rem;
+  margin-left:auto ;
+  margin-right: auto;
+  margin-top:  60px  ;
+}
+
+.container-fluid{
+  padding: 25px;
+}
+
+.meet-team{
+  text-decoration: underline;
+  color: white;
+
+}
+
+
+
+/* THIS IS WHAT ADJUST THE SIZE OF THE WHOLE CARD */
+.card{
+  height: 450px;
+  border: 1px solid rgb(0, 0, 0);
+
+} 
+
+/* THIS MAKES ALL THE TEXT AND IMAGES INSIDE THE CARD ALIGN */
+.card-img-top{
+  height:auto; 
+  width: 100%;
+
+}
+
+.card:hover{
+  height:auto; 
+  width: 300px;
+}
+
+.man-1{
+  background-color: #c11a2b;
+}
+
+.woman-1{
+  background-color: #017e7f;
+}
+
+.woman-2{
+  background-color: #efa032;
+}
+
+.man-2{
+  background-color: #eb452b;
+}
+
+hr{
+  background-color:black;
+}
+
+
+
+
+
+
+
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+
+
+
+
+
+
+
+
+
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ FOOTER @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@--> */
+footer{
+
+}
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@--> */
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 1200px){
+  /* ``````````````````````````````````````````` NAV ``````````````````````````````````````````` */
+.nav-header-name a{
+  font-size: 60px;
+  color: #69DCE1;
+}
+
+header{
+  font-size: 25px;
+}
+/* ````````````````````````````````````````````````````````````````````````````````````````````````` */
+  
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ JUMBOTRON ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.jumbotron-header{
+
+  font-size: 100px;
+
+}
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! 3 COLUMNS !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+.three-columns{
+  padding: 0px 20px;
+
+}
+
+.three-columns-header{
+  font-size: 70px;
+}
+
+.description{
+  font-size: 30px;
+}
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+}
