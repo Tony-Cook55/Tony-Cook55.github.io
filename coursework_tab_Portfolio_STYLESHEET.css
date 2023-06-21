@@ -1,21 +1,17 @@
+
+
+
+
+
+
+
+
+
+/* **************************** COLORS FOR 70's LOOK ********************************* */
 body{
   background-color: #f6dbac;
 }
-
-/* adds the background picture for the navbar */
-nav{
-  background-image: url("pictures/record_label_pic/70s-bold-multicolor-stripes-retro-wallpaper-mural-Plain-scaled.png");
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-
-
-
-
-
+/* **************************** COLORS FOR 70's LOOK ********************************* */
 
 
 
@@ -26,6 +22,17 @@ nav{
 
 
 /* ~~~~~~~~~~~~~~~~~~ NAVBAR ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* adds the background picture for the navbar */
+nav{
+  background-image: url("pictures/record_label_pic/70s-bold-multicolor-stripes-retro-wallpaper-mural-Plain-scaled.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* This changes the top text says "TONY COOK" in the nav*/
 .navbar-brand h1{
   text-transform: uppercase;
   font-weight: 900;
@@ -34,7 +41,7 @@ nav{
   line-height: 1;
   font-family: 'Shrikhand', cursive;
   /* font-family: Futura, Helvetica, sans-serif;  */
-  font-size: 6vw;
+  font-size: 8vw;
   
   color: #E63E23;
   text-shadow: 2px 2px 0px #000000, 4px 4px 0px #000000;    
@@ -44,22 +51,21 @@ nav{
 @media screen and (min-width: 600px) {
   /* makes the shadow bigger to fit the bigger font */
   .navbar-brand h1{
+    font-size: 6vw;
     text-shadow: 5px 5px 0px #000000, 8px 8px 0px #000000;
     }
 }
 
 
 
-
+/* changes the "TONY COOK" text in the nav bar */
 .nav-item{
-text-transform: uppercase;
+  text-transform: uppercase;
 
+  font-family: 'Shrikhand', cursive;  
+  font-size: 20px;
 
-
-font-family: 'Shrikhand', cursive;  
-font-size: 20px;
-
-color: #E63E23;
+  color: #E63E23;
 }
 /* N~~~~~~~~~~~~~~~~~~ NAVBAR ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
@@ -68,7 +74,7 @@ color: #E63E23;
 
 
 
-/* This changes the top text that is on the home page */
+/* This changes the "COURSEWORK" Text */
 h1 {
 text-transform: uppercase;
 font-weight: 900;
@@ -77,7 +83,7 @@ padding: 0;
 line-height: 1;
 font-family: 'Shrikhand', cursive;
 /* font-family: Futura, Helvetica, sans-serif;  */
-font-size: 6vw;
+font-size: 8vw;
 
 color: rgb(0, 0, 0);
 
@@ -90,6 +96,7 @@ text-shadow: 2px 2px 0px #ffffff, 3.5px 3.5px 0px #000000;
 @media screen and (min-width: 600px) {
 
 h1 {
+  font-size: 6vw;
   text-shadow: 5px 5px 0px #ffffff, 8px 8px 0px #000000;
   }
 }
@@ -104,6 +111,8 @@ h1 {
 
 
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! ACCORDION ITEMS !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+/* The main Text Shown on the accordion are h2's  - Ranken Technical College , Programming and Fundamentals C# , Web Development */
 h2{
   text-transform: uppercase;
 font-weight: 900;
@@ -123,7 +132,7 @@ font-size: 5vw;
 
 
 
-/* This is for the h4 elements inside the cards mainly in SKILLS and ACCOMPLISHMENTS */
+/* This is for the h4 elements inside the cards*/
 h4{
   font-size: 20px;
 }
@@ -139,7 +148,7 @@ h4{
 
 
 
-
+/* This is the h2s or the items that are buttons  */
 .header_texts{
   color: #f6dbac;
   border: 0;
@@ -230,20 +239,14 @@ h4{
 
 
 
-
-
-
-
-
-
-
-
+/*   <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Footer %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% --> */
 
 footer{
   background-color: #60C3A7;
   margin-top: 30px;
 }
 
+/* gives more padding on bigger screens */
 @media screen and (min-width: 600px) {
 
   footer{
@@ -255,3 +258,4 @@ footer{
 .copyright{
   background-color: #00000033
 }
+/*   <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Footer %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% --> */

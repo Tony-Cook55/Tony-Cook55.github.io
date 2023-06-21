@@ -4,32 +4,6 @@ body{
   background-color: #f6dbac;
 }
 
-/* adds the background picture for the navbar */
-nav{
-  background-image: url("pictures/record_label_pic/70s-bold-multicolor-stripes-retro-wallpaper-mural-Plain-scaled.png");
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-
-.first-cafe-telegraph{
-  background-color: #176e82;
-}
-
-.new-cafe-telegraph{
-  background-color: #E63E23;
-}
-
-.first-portfolio{
-  background-color: #efbb4a;
-}
-
-.new-portfolio{
-  background-color: #259fa4;
-}
-
 /* **************************** COLORS FOR 70's LOOK ********************************* */
 
 
@@ -41,6 +15,18 @@ nav{
 
 
 /* ~~~~~~~~~~~~~~~~~~ NAVBAR ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* adds the background picture for the navbar */
+nav{
+  background-image: url("pictures/record_label_pic/70s-bold-multicolor-stripes-retro-wallpaper-mural-Plain-scaled.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+/* This changes the top text says "TONY COOK" in the nav*/
 .navbar-brand h1{
   text-transform: uppercase;
   font-weight: 900;
@@ -49,7 +35,7 @@ nav{
   line-height: 1;
   font-family: 'Shrikhand', cursive;
   /* font-family: Futura, Helvetica, sans-serif;  */
-  font-size: 6vw;
+  font-size: 8vw;
   
   color: #E63E23;
   text-shadow: 2px 2px 0px #000000, 4px 4px 0px #000000;    
@@ -59,6 +45,7 @@ nav{
 @media screen and (min-width: 600px) {
   /* makes the shadow bigger to fit the bigger font */
   .navbar-brand h1{
+    font-size: 6vw;
     text-shadow: 5px 5px 0px #000000, 8px 8px 0px #000000;
     }
 }
@@ -68,16 +55,14 @@ nav{
 
 
 
-
+/* changes the "TONY COOK" text in the nav bar */
 .nav-item{
-text-transform: uppercase;
+  text-transform: uppercase;
 
+  font-family: 'Shrikhand', cursive;  
+  font-size: 20px;
 
-
-font-family: 'Shrikhand', cursive;  
-font-size: 20px;
-
-color: #E63E23;
+  color: #E63E23;
 }
 /* N~~~~~~~~~~~~~~~~~~ NAVBAR ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
@@ -86,7 +71,7 @@ color: #E63E23;
 
 
 
-/* This changes the top text that is on the home page */
+/* This changes the top text says "MY PREVIOUS WORK"*/
 h1 {
 text-transform: uppercase;
 font-weight: 900;
@@ -95,7 +80,7 @@ padding: 0;
 line-height: 1;
 font-family: 'Shrikhand', cursive;
 /* font-family: Futura, Helvetica, sans-serif;  */
-font-size: 6vw;
+font-size: 8vw;
 
 color: rgb(0, 0, 0);
 
@@ -108,6 +93,7 @@ text-shadow: 2px 2px 0px #ffffff, 3.5px 3.5px 0px #000000;
 @media screen and (min-width: 600px) {
 
 h1 {
+  font-size: 6vw;
   text-shadow: 5px 5px 0px #ffffff, 8px 8px 0px #000000;
   }
 }
@@ -124,8 +110,11 @@ h1 {
 
 
 
-/* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ CARDS OF MY WORK $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+/* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ MODALS WITH CARD OF WORK INSIDE $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
 
+
+
+/* ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ CARD ITEMS INSIDE MODALS ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */
 /* for some reason there is like 10px of margin on the right side of screen creating a scroll bar this removes bar */
 body{
   overflow-x: hidden
@@ -137,21 +126,24 @@ body{
   margin-bottom: 40px;
   margin-left: 50px;
   margin-right: 50px;
+
   font-family: 'Fredoka', sans-serif;
 }
 
-
+/* Makes images within the cards shrink accordingly */
 .card-img-top {
   width: 100%;
-  height: 40vw;
+  height: 30vw;
   object-fit: cover;
-  width: auto;
 }
 
+
+/* Descriptive text that is within the card */
 .card-text{
-  font-size: 4vw;
+  font-size: 3.5vw;
 }
 
+/* When screen is at its largest changes padding and adjusts the sizes of Images and text within card */
 @media screen and (min-width: 600px) {
 
   .card{
@@ -161,9 +153,8 @@ body{
 
   .card-img-top {
     width: 100%;
-    height: 25vw;
+    height: 35vw;
     object-fit: fill;
-    width: auto;
   }
 
   .card-text{
@@ -173,16 +164,25 @@ body{
 }
 
 
+/* this is the h2 text inside the modal - its the  .card-text */
+h2{
+  text-transform: uppercase;
+font-weight: 900;
+margin: 0 0 1rem;
+padding: 0;
+line-height: 1;
+color: #000000;
+font-family: 'Shrikhand', cursive;
+/* font-family: Futura, Helvetica, sans-serif;  */
+font-size: 5vw;
+}
 
-/* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ CARDS OF MY WORK $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
-
-
-
-
-
-
-
-
+@media screen and (min-width: 600px) {
+  h2{
+  font-size: 3vw;
+  }
+}
+/* ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ CARD ITEMS INSIDE MODALS ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */
 
 
 
@@ -192,22 +192,29 @@ body{
 /* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% MODAL &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
 /*
 #259fa4  #176e82  #df3b30  #e4722b  #efbb4a #E63E23
-
 */
 
 
-
+/* This is the text that is on the top left when a module is opened */
 .modal-title{
   font-size: 4vw;
 }
 
+/* This is everything behind the .modal-text */
 .modal-header { 
 
-  padding: 12px 30px;
-  overflow: hidden;
-  background: #E63E23;
+  padding: 30px 30px;
+
+/* same background image as the navbar */
+  background-image: url("pictures/record_label_pic/70s-bold-multicolor-stripes-retro-wallpaper-mural-Plain-scaled.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
+
+/* This is the container that everything sits in makes it the same color as the main body and gives it a card like border */
 .modal-content{
   background-color: #f6dbac;
   border: 5px solid black;
@@ -218,8 +225,7 @@ body{
 
 
 
-
-
+/* This is what gives the cool appearance for the modal buttons  */
 .btn {
   font-family: 'Shrikhand', cursive; 
 
@@ -230,6 +236,8 @@ body{
   transition: all 0.2s;
 
   font-size: 4vw;
+
+  width: 100%;
 
   color: #f6dbac;
   background-color: #176e82;
@@ -245,17 +253,22 @@ body{
 }
 
 
-
-
-
-
-
-
+/* controls the actual outside of the button */
 .btn:last-child {
-  margin: 50px;
+
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+
+
+  /* centers the buttons using the help of  <div class="button d-flex justify-content-center"> */
+  margin-left: 25vw;
+  margin-right: 25vw;
+
+  margin-bottom: 5vw;
 }
 
-.btn:hover {
+/* Hover effects to invert everything */
+.btn:hover, .btn:focus {
   box-shadow: 0.4rem 0.4rem 0 #259fa4;
   background-color: #f6dbac;
   border: 3px solid #176e82;
@@ -264,11 +277,6 @@ body{
   transform: translate(-0.4rem, -0.4rem);
 }
 
-.btn:active {
-  box-shadow: 0 0 0 #000000;
-
-  transform: translate(0, 0);
-}
 
 /* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% MODAL &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
 
@@ -280,6 +288,7 @@ body{
 
 
 
+/* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ MODALS WITH CARD OF WORK INSIDE $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
 
 
 
@@ -294,7 +303,7 @@ body{
 
 
 
-
+/*   <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Footer %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% --> */
 
 footer{
   background-color: #60C3A7;
@@ -303,6 +312,7 @@ footer{
 .copyright{
   background-color: #00000033
 }
+/*   <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Footer %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% --> */
 
 
 

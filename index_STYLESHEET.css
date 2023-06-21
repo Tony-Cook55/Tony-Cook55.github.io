@@ -16,15 +16,14 @@ body{
 .explore-text{
   background-color: #259fa4;
 }
+
 /* **************************** COLORS FOR 70's LOOK ********************************* */
 
 
 
 
 
-body{
-  max-width: 100%;
-}
+
 
 
 
@@ -75,7 +74,7 @@ video {
 
 
 
-/* This changes the top text that is on the home page */
+/* This changes the top text that is on the home page That greets viewer*/
 h1 {
   text-transform: uppercase;
   font-weight: 900;
@@ -84,7 +83,7 @@ h1 {
   line-height: 1;
   font-family: 'Shrikhand', cursive;
   /* font-family: Futura, Helvetica, sans-serif;  */
-  font-size: 6vw;
+  font-size: 8vw;
 
   text-shadow: 2px 2px 0px #ffffff, 3.5px 3.5px 0px #000000;
 }
@@ -95,6 +94,7 @@ h1 {
 @media screen and (min-width: 600px) {
 
 h1 {
+  font-size: 6vw;
   text-shadow: 5px 5px 0px #ffffff, 8px 8px 0px #000000;
   }
 }
@@ -119,17 +119,6 @@ h1 {
 
   color: #E63E23;
 
-
-}
-
-
-
-/* this is the lil explanation about me under header text gets font and different shadow */
-.underHeader{
-  font-family: 'Shrikhand', cursive;
-  text-shadow: 2px 2px 0px #000000, 2.5px 2.5px 0px #000000;
-  color: #ffffff;
-  word-spacing: 3px;
 }
 
 
@@ -144,6 +133,18 @@ h1 {
     padding-bottom: 100px;
   }
 }
+
+
+/* this is the lil explanation about me under header text gets font and different shadow */
+.underHeader{
+  font-family: 'Shrikhand', cursive;
+  text-shadow: 2px 2px 0px #000000, 2.5px 2.5px 0px #000000;
+  color: #ffffff;
+  word-spacing: 3px;
+}
+
+
+
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! HEADER TEXT ON VID !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 
 
@@ -211,8 +212,8 @@ body{
   overflow-x: hidden
 }
 
-.pic-of-me{
-
+/* This is code that applies to both the pictures */
+.both-pics{
   width: 694;
   height: 837;
 
@@ -220,24 +221,28 @@ body{
   padding-right: 25px;
 }
 
-.text-of-me{
+/* code for both sets of text next to the pictures */
+.both-texts{
   font-size: 4vw;
   font-family: 'Fredoka', sans-serif;
 
   text-align: center;
   
+  color: #f6dbac;
 
   padding-left: 50px;
   padding-right: 50px;
 }
 
+  /* only adds padding to the pic of me when small */
 .me-in-snow{
   padding-top: 30px;
   
 }
 
+
 .ranken-pic{
-  /* only adds padding to the tony hawk pic when screen is small */
+  /* only adds padding to the ranken pic when small */
   padding-bottom: 30px;
 }
 
@@ -247,7 +252,8 @@ body{
 /* when the screen is above the smallest size sets links to be bigger */
 @media screen and (min-width: 600px) {
 
-  .pic-of-me{
+  /* When screen is big adds padding to all sides of the pics */
+  .both-pics{
     padding-left: 50px;
     padding-right: 50px;
     padding-bottom: 30px;
@@ -258,8 +264,8 @@ body{
 
   }
 
-
-  .text-of-me{
+  /* Makes text the correct size when bigger */
+  .both-texts{
 
     padding-left: 85px;
     padding-right: 85px;
@@ -274,7 +280,7 @@ body{
 
 
 
-
+/* The text at the very bottom of screen gains all attributes of above text code  */
 .explore-text{
   padding-bottom: 30px;
 
@@ -289,7 +295,7 @@ body{
 
 
 
-
+/*   <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Footer %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% --> */
 footer{
   background-color: #60C3A7;
 }
@@ -297,3 +303,4 @@ footer{
 .copyright{
   background-color: #00000033
 }
+/*   <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Footer %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% --> */
