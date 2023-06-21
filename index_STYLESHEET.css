@@ -208,9 +208,11 @@ h1 {
 /* <!-- ########################################## BACK AND FOURTH SECTIONS ################################### --> */
 
 /* for some reason there is like 10px of margin on the right side of screen creating a scroll bar this removes bar */
+/*
 body{
   overflow-x: hidden
 }
+*/
 
 /* This is code that applies to both the pictures */
 .both-pics{
@@ -233,6 +235,18 @@ body{
   padding-left: 50px;
   padding-right: 50px;
 }
+
+
+
+.picture-of-me-text{
+  color: #df3b30;
+}
+
+.ranken-text{
+  color: #efbb4a;
+}   
+
+
 
   /* only adds padding to the pic of me when small */
 .me-in-snow{

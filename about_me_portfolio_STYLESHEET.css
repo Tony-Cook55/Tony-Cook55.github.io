@@ -14,7 +14,7 @@ body{
 }
 
 .my-dogs{
-  background-color: #df3b30;
+  background-color: #f6dbac;
 }
 
 .salem{
@@ -91,7 +91,6 @@ nav{
 
 
 /* changes the "TONY COOK" text in the nav bar */
-
 .nav-item{
   text-transform: uppercase;
 
@@ -111,7 +110,7 @@ nav{
 h1 {
   text-transform: uppercase;
   font-weight: 900;
-  margin: 0 0 1rem;
+
   padding: 0;
   line-height: 1;
   font-family: 'Shrikhand', cursive;
@@ -141,9 +140,11 @@ h1 {
 /* <!-- ########################################## BACK AND FOURTH SECTIONS ################################### --> */
 
 /* for some reason there is like 10px of margin on the right side of screen creating a scroll bar this removes bar */
+/*
 body{
   overflow-x: hidden
 }
+*/
 
 /* this is all code for both of the pictures about me those being forklift and Tony Hawk */
 .both-pics{
@@ -160,6 +161,8 @@ body{
   font-size: 4vw;
   font-family: 'Fredoka', sans-serif;
   
+  text-align: center;
+
   color:#f6dbac;
 
   padding-left: 40px;

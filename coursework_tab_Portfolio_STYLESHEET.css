@@ -78,7 +78,7 @@ nav{
 h1 {
 text-transform: uppercase;
 font-weight: 900;
-margin: 0 0 1rem;
+
 padding: 0;
 line-height: 1;
 font-family: 'Shrikhand', cursive;
@@ -243,14 +243,22 @@ h4{
 
 footer{
   background-color: #60C3A7;
-  margin-top: 30px;
+
+  /* this adds padding to make equal space between header and footer */
+  margin-top: 140px;  
+
+  width: 100%;
+
+  
+  margin-bottom:  -20px;
 }
 
 /* gives more padding on bigger screens */
 @media screen and (min-width: 600px) {
 
   footer{
-    margin-top: 60px;
+      /* this adds padding to make equal space between header and footer */
+    margin-top: 200px;
   }
 }
 

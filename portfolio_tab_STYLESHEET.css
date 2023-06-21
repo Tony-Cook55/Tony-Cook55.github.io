@@ -75,7 +75,7 @@ nav{
 h1 {
 text-transform: uppercase;
 font-weight: 900;
-margin: 0 0 1rem;
+
 padding: 0;
 line-height: 1;
 font-family: 'Shrikhand', cursive;
@@ -256,15 +256,15 @@ font-size: 5vw;
 /* controls the actual outside of the button */
 .btn:last-child {
 
-  padding-top: 2vh;
-  padding-bottom: 2vh;
+  padding-top: 4vh;
+  padding-bottom: 4vh;
 
 
   /* centers the buttons using the help of  <div class="button d-flex justify-content-center"> */
-  margin-left: 25vw;
-  margin-right: 25vw;
+  margin-left: 10vw;
+  margin-right: 10vw;
 
-  margin-bottom: 5vw;
+  margin-bottom: 15vw;
 }
 
 /* Hover effects to invert everything */
