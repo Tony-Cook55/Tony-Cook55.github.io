@@ -104,12 +104,6 @@ h1 {
 
 
 
-
-
-
-
-
-
 /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ MODALS WITH CARD OF WORK INSIDE $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
 
 
@@ -219,6 +213,62 @@ font-size: 5vw;
   background-color: #f6dbac;
   border: 5px solid black;
 }
+
+
+
+
+
+
+
+
+
+
+/* This is the "CLICK TO VIEW FINISHED PRODUCT TEXT" inside the modal to make users click - this sets the background pic behind and as the color of the text */
+.click-to-view a{
+  background-image: url("pictures/record_label_pic/70s-bold-multicolor-stripes-retro-wallpaper-mural-Plain-scaled.png");
+
+  /* sets it behind as the text color */
+	-webkit-background-clip: text;
+	background-clip: text;
+  background-repeat: repeat;
+
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+	color: transparent;
+
+
+  text-shadow: -3px -3px 0px black, -4.5px -4.5px 0px white;
+}
+
+/* when hovered over the shadow will flop to add some 3d effect */
+h2 a:hover{
+  text-shadow: 2px 2px 0px black, 3.5px 3.5px 0px white;
+}
+
+
+
+
+/* when the screen is above the smallest size sets The header text shadow accordingly */
+@media screen and (min-width: 600px) {
+
+  h1 {
+    font-size: 6vw;
+    text-shadow: 5px 5px 0px #ffffff, 8px 8px 0px #000000;
+    }
+
+    h2 a:hover{
+      text-shadow: 5px 5px 0px black, 8px 8px 0px white;
+    }
+
+  }
+
+
+
+
 
 
 

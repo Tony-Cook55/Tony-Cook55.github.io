@@ -78,14 +78,20 @@ video {
 h1 {
   text-transform: uppercase;
   font-weight: 900;
-  margin: 0 0 1rem;
+
   padding: 0;
-  line-height: 1;
+ 
   font-family: 'Shrikhand', cursive;
   /* font-family: Futura, Helvetica, sans-serif;  */
   font-size: 8vw;
 
   text-shadow: 2px 2px 0px #ffffff, 3.5px 3.5px 0px #000000;
+
+
+  /* pushes the main text to the right side of screen to allow user to see record */
+  padding-left: 190px;
+
+
 }
 
 
@@ -118,6 +124,11 @@ h1 {
   margin-right: 25px;
 
   color: #E63E23;
+
+
+
+  /* centers the main text in the middle of the record video */
+  padding-top: 70px;
 
 }
 
