@@ -17,11 +17,12 @@
 
   background-image: url("https://ranken.edu/wp-content/themes/ranken/img/ranken-bg.jpg");
 
- 
+
   /* moves picture along with screen */
-    /*    background-attachment: fixed;   */
+  /*  background-attachment: fixed;   */
 
-
+  /* gets rid of the stupid little border to the background image so its flush with navbar */
+  border-radius: 0;
 
   background-repeat: no-repeat;
   background-size: cover;
