@@ -100,11 +100,6 @@
   /* this is the small text under the title */
   color: #ff0000;
 
-  /* this is the cards main text color */
-  .b-a-f-s__main_content_text{
-    color: black;
-  }
-
 }
 
   /* changes the header text with product name to be black */
@@ -119,6 +114,9 @@
     }
 
 
+  .b-a-f-s__main_content_text{
+    color: black;
+  }
 
 
 
