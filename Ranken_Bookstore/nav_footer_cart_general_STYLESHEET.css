@@ -301,6 +301,19 @@ padding-left: 0;
   padding: 30px 30px;
   background-color: #ed171f;
 }
+
+
+
+/* this centers the Close and Check Out button at the end of the Cart Modal */
+.modal-footer{
+  justify-content: center;
+}
+
+/* this is the Check Out Button Makes it Ranken Red */
+.modal-footer .btn-primary{
+  background-color: #ed171f;
+}
+
 /* ````````````````````````````````````` CART MODAL ````````````````````````````````````````` */
 
 
