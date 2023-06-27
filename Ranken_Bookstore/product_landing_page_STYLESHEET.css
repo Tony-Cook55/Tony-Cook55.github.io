@@ -1,0 +1,119 @@
+
+
+/* this is the main headers for the different product sections */
+.product_header{
+  text-decoration: underline;
+}
+
+
+
+/* gives the cards a border */
+.card-body{
+  border: 2px solid black;
+}
+
+
+/* this is the links that are teh anchors turns them a different color */
+.anchor_links{
+  color:#ed171f;
+
+  /* adds space between the anchors and the first header product text */
+  margin-bottom: 60px;
+}
+
+
+/* anchor_links on hover gain a little hover effect/animation*/
+.anchor_links:hover, .anchor_links:focus {
+	text-decoration: none;
+	transition: color 0.1s ease-in-out;
+
+  transform: scale(1.1);
+
+  color: black;
+}
+
+
+
+    /* THIS is for the review stars makes them all black and the checked ones orange */
+    .fa-star{
+      color: #9e9e9e;
+    }
+    .checked {
+      color: orange;
+    }
+
+    .half{
+      background: linear-gradient(to right, orange 50%, #9e9e9e 50%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+
+
+
+
+    /* makes the carousel images to all be the same dimensions */
+    .carousel-inner>.active {
+      height: 500px; 
+    }
+    @media screen and (min-width: 600px) {
+
+        /* makes the carousel images to all be the same dimensions */
+        .carousel-inner>.active {
+          height: 400px; 
+        }
+    }
+
+
+
+    /* makes the arrows turn invisible so they wont be seen over images */
+    .carousel-control-next-icon, .carousel-control-prev-icon{
+      background-image: none;
+    }
+
+
+
+    /* this is the add to cart button in all the cards */
+    .add_to_cart{
+      background-color: #ed171f;
+      color: white;
+    }
+
+    .add_to_cart:hover, .add_to_cart:focus{
+      background-color: rgb(255, 65, 65);
+      color: white;
+
+      
+      text-decoration: none;
+      transition: color 0.1s ease-in-out;
+    
+      transform: scale(1.03);
+    }
+
+
+    /* add this to any img's class to make it go in the center of the card */
+    .center_picture{
+      margin-top: 80px;
+    }
+
+
+
+
+
+
+
+    /*  This is for the size buttons
+          <button type="button" class="btn  btn-sm">Small</button>
+          <button type="button" class="btn  btn-sm">Medium</button>
+          <button type="button" class="btn  btn-sm">Large</button>
+          <button type="button" class="btn  btn-sm">XL</button>
+
+
+                    <!-- Add to cart button that if any poor sole that has to had javascript to this can use to make it work -->
+          <button type="button" class="btn mt-3 add_to_cart">Add To Cart</button>
+    */
+
+
+
+

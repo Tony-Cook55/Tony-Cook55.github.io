@@ -1,0 +1,359 @@
+
+
+
+
+/*         <link rel="stylesheet" type="text/css" href="nav_footer_cart_general_STYLESHEET.css">    */
+
+
+
+/* ********************************************* MISC/GENERAL THINGS ************************************ */
+body{
+  font-family: 'Geologica', sans-serif;
+
+
+  background-image: radial-gradient(73% 147%, #EADFDF 59%, #ECE2DF 100%), radial-gradient(91% 146%, rgba(255,255,255,0.50) 47%, rgba(0,0,0,0.50) 100%);
+  background-blend-mode: screen;
+}
+
+
+h1{
+  font-size: 7.5vh;
+  padding: 25px 0 30px 0;
+}
+
+@media screen and (min-width: 600px) {
+
+  h1{
+    font-size: 10vh;
+  }
+}
+
+
+/* makes links on hover gain a little hover effect/animation  NEEDED TO BE SMALLER FOR PHONES*/
+a:hover, a:focus {
+	text-decoration: none;
+	transition: color 0.1s ease-in-out;
+
+  transform: scale(1.03);
+}
+
+@media screen and (min-width: 600px) {
+  a:hover, a:focus {
+    text-decoration: none;
+    transition: color 0.1s ease-in-out;
+  
+    transform: scale(1.1);
+  }
+}
+
+
+
+
+
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ NAV ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+nav{
+  background-color: #ed171f;
+
+
+  text-align: center;
+
+}
+
+
+
+/* Ranken's Logo Image in top left flex Accordingly */
+.ranken_logo{
+  width: 45vw;
+  padding-left: 0;
+}
+
+/* when the screen is above the smallest size sets the ranken image to change sizes to fit larger screens */
+@media screen and (min-width: 600px) {
+
+
+  /* Ranken's Logo Image in top left flex Accordingly */
+  .ranken_logo{
+    width: 15vw;
+    padding-left: 30px;
+  }
+}
+
+
+
+/* This is the big header in the top left of the nav */
+.navbar-brand{
+  color:  white;
+}
+
+
+/* This makes the current ACTIVE tab bold and black */
+.active{
+  font-weight: bold;
+  color: black !important; /* this overwrites the .nav-link color being white */
+
+}
+
+/* this is the little menu that items in dropdown are put into this targets the ACTIVE word that we put on active tabs */
+.dropdown-menu .active{
+  /* matches the background color fot the dropdown-menu */
+  background-color: #ed171f;
+}
+
+
+/* this centers all the dropdown texts on small screens to be center with the Home Text */
+.dropdown-toggle{
+  margin-left: 13px;
+}
+
+
+/* the actual links */
+.nav-link{
+  color: white;
+  font-size: 3vh;
+}
+
+/* on hover links turn black */
+.nav-link:hover{
+  color: black;
+}
+
+
+/* this is the hours text in the nav */
+.hours{
+  margin-right: 0;
+}
+/* when the hours text is hovers it will stay white or whatever color you want in future */
+nav:hover .hours, nav:focus .hours{
+  color: white;
+}
+/* when the screen is big centers the hours text inside the navbar */
+@media screen and (min-width: 600px) {
+  .hours{
+    margin-right: 10vh;
+  }
+}
+
+
+
+
+/* this is the container for the cart icon and button this sets it to the middle to align with links on small screens */
+.cart_container{
+  margin-left:  41%;
+  margin-right: 40%;
+}
+
+
+/* little cart on the right of nav */
+.cart-button{
+  color: white;
+  font-size: 3vh;
+  padding-right: 0; /*sets padding to 0 so it can be adjusted on screen zoom */
+  padding-left: 0;
+
+}
+
+/* the little cart icon next to the text "Cart" */
+.fa-cart-shopping{
+  font-size: 2.5vh;
+}
+
+/* makes the cart button and icon on hover gain a lil larger and a slight animation */
+.cart-button:hover {
+	text-decoration: none;
+	transition: color 0.1s ease-in-out;
+
+  transform: scale(1.1);
+}
+
+/* when the screen is above the smallest size sets the links to change sizes to fit larger screens */
+@media screen and (min-width: 600px) {
+
+  /* this is the container for the cart icon and button this sets it back to 0 to be normal on big screens */
+  .cart_container{
+    margin-left:  0;
+    margin-right: 0;
+  }
+  
+
+  /* the actual links and the cart button */
+  .nav-link{
+    font-size: 3vh;
+  }
+
+  .cart-button{
+    font-size: 3vh;
+
+    /* pushes the cart button towards inside more and padding-left centers inside of invisible button on click */
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+
+  /* cart icon needs to be 1vh bigger than the rest of nav text to align it in center with "Cart" */
+  .fa-cart-shopping{
+    font-size: 2.5vh;
+  }
+}
+
+
+
+
+/* the following will be seen on smaller screens */
+
+/* This is the toggler that will appear when screen is shrank */
+.navbar-toggler{
+  background-color: white;
+
+}
+
+/* the icon in the toggler */
+.bi-three-dots{
+  color: black;
+  /* https://icons.getbootstrap.com/icons/three-dots/ */
+}
+
+/* this is the little menu that items in dropdown are put into */
+.dropdown-menu{
+  background-color: #ed171f;
+  border: 3px solid black;
+  
+  text-align: center;
+}
+
+/* the actual dropdown item itself */
+.dropdown-item{
+  color: white;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ NAV ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ````````````````````````````````````` CART MODAL ````````````````````````````````````````` */
+
+/* centers the modal */
+.modal {
+padding-left: 20px;
+}
+
+
+/* This is the text that is on the top left when a module is opened */
+.modal-title{
+  font-size: 9vw;
+  color: white;
+}
+
+/* this is the cart icon that is inside the modals header */
+.modal-cart{
+  font-size: 8vw;
+}
+
+/* adds padding to the actual content of the cart modal centers items */
+.modal-body{
+  padding: 100px 0;
+}
+
+/* this is the plus icon to allow users to add stuff */
+.fa-plus{
+  font-size: 9vw;
+}
+
+/* when the screen is above the smallest size sets the modal text and icons to change sizes to fit larger screens */
+@media screen and (min-width: 600px) {
+  /* This is the text that is on the top left when a module is opened */
+  .modal-title{
+    font-size: 3vw;
+  }
+
+  /* this is the cart icon that is inside the modals header */
+  .modal-cart{
+    font-size: 2.5vw;
+  }
+
+  /* this is the plus icon to allow users to add stuff */
+  .fa-plus{
+    font-size: 2.5vw;
+  }
+}
+
+
+
+/* This is everything behind the .modal-text */
+.modal-header { 
+  padding: 30px 30px;
+  background-color: #ed171f;
+}
+/* ````````````````````````````````````` CART MODAL ````````````````````````````````````````` */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*   <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Footer %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% --> */
+
+/* this code is in the product_landing_page as well but its here specifically for the back to top on the home page */
+.anchor_links{
+  color:#ed171f;
+
+}
+
+
+/* top_section on hover gain a little hover effect/animation*/
+.anchor_links:hover, .anchor_links:focus {
+	text-decoration: none;
+	transition: color 0.1s ease-in-out;
+
+  transform: scale(1.1);
+
+  color: black;
+}
+
+
+
+
+footer{
+  background-color: #ed171f;
+}
+
+
+/* this sets the accessories link in the footer on small screens to stay in the middle */
+.nav-link_accessories{
+  margin: 0;
+}
+
+/* on big screens the accessories link in the footer will go to the right 50px to align it with the rest of the links */
+@media screen and (min-width: 600px) {
+
+  .nav-link_accessories{
+    margin-right: 50px;
+  }  
+
+}
+
+.copyright{
+  background-color: #00000033
+}
+/*   <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Footer %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% --> */
