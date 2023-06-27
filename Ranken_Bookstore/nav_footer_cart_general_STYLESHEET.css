@@ -245,7 +245,7 @@ nav:hover .hours, nav:focus .hours{
 
 /* centers the modal */
 .modal {
-padding-left: 20px;
+padding-left: 0;
 }
 
 
@@ -272,6 +272,12 @@ padding-left: 20px;
 
 /* when the screen is above the smallest size sets the modal text and icons to change sizes to fit larger screens */
 @media screen and (min-width: 600px) {
+
+/* centers the modal */
+.modal {
+  padding-left: 20px;
+  }
+
   /* This is the text that is on the top left when a module is opened */
   .modal-title{
     font-size: 3vw;
