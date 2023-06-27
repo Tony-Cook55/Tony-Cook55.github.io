@@ -193,47 +193,48 @@
 @media screen and (min-width: 600px) {
   .back_and_forth_section{
     flex-wrap: inherit;
+  } 
 
-    /* the images in container */
-    .b-a-f-s__img {
+  /* the images in container */
+  .b-a-f-s__img {
 
-      /* allows for images to be centred  */
-      display: block;
-      width: 60%;
-
-
-      transition: transform 0.5s ease;
-
-      /* sets top borders back to 0 on big screen */
-      border-top-right-radius: 0;
-      border-top-left-radius: 0;
-
-      /* rounds the right side and bottom right of the picture
-      border-radius: 0px 25px 25px 0px;
-      */
-      /* when on big screens sets the borders back to 0  
-      border-top-right-radius: 0;
-      border-top-left-radius: 0;    
-      */
-    }
-
-    /* this is the container that holds all the text inside the card */
-    .b-a-f-s__text_container{
-      padding: 3rem;
-      width: 100%;
-    }
+    /* allows for images to be centred  */
+    display: block;
+    width: 60%;
 
 
-    /* this makes any new item postcard picture and text added to switch either to the left or right */
-    &:nth-child(2n+1) {
-      flex-direction: row;
-    }
+    transition: transform 0.5s ease;
 
-    &:nth-child(2n+0) {
-      flex-direction: row-reverse;
-    }
+    /* sets top borders back to 0 on big screen */
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
 
+    /* rounds the right side and bottom right of the picture
+    border-radius: 0px 25px 25px 0px;
+    */
+    /* when on big screens sets the borders back to 0  
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;    
+    */
   }
+
+  /* this is the container that holds all the text inside the card */
+  .b-a-f-s__text_container{
+    padding: 3rem;
+    width: 100%;
+  }
+
+
+  /* this makes any new item postcard picture and text added to switch either to the left or right */
+  &:nth-child(2n+1) {
+    flex-direction: row;
+  }
+
+  &:nth-child(2n+0) {
+    flex-direction: row-reverse;
+  }
+
+
 }
 /* <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ BACK AND FORTH SECTION @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@--> */
 
