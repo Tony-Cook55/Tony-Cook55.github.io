@@ -243,7 +243,7 @@ nav:hover .hours, nav:focus .hours{
 
 /* ````````````````````````````````````` CART MODAL ````````````````````````````````````````` */
 
-/* centers the modal */
+/* on phones puts the cart back into the center of the screen */
 .modal {
 padding-left: 0;
 }
@@ -273,7 +273,7 @@ padding-left: 0;
 /* when the screen is above the smallest size sets the modal text and icons to change sizes to fit larger screens */
 @media screen and (min-width: 600px) {
 
-/* centers the modal */
+/* centers the modal on big screens*/
 .modal {
   padding-left: 20px;
   }
