@@ -171,11 +171,26 @@ font-family: 'Shrikhand', cursive;
 font-size: 5vw;
 }
 
+
+/* NOT ALL PRODUCTS ARE SUITABLE FOR SMALL DEVICES TEXT */
+p{
+  font-size: 2.5vw;
+}
+
 @media screen and (min-width: 600px) {
   h2{
   font-size: 3vw;
   }
+
+
+  /* NOT ALL PRODUCTS ARE SUITABLE FOR SMALL DEVICES TEXT */
+  p{
+    font-size: 1vw;
+  }
 }
+
+
+
 /* ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ CARD ITEMS INSIDE MODALS ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */
 
 
