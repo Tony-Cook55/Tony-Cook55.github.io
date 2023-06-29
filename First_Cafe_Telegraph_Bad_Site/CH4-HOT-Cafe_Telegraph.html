@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="CH4-HOT-Cafe_Telegraph-Stylesheet.css">
+  <title>Cafe Telegraph Smoke Shack</title>
+
+
+
+</head>
+
+
+
+<body>
+
+  <div id="EVERYTHING">
+
+
+
+  <!-- Header
+● Include name of the restaurant in the largest heading - 2.5pts
+● Include a link to their full menu - 2.5 pts
+  ○ Use target="_blank" to open the menu in a new tab
+● Include a link to them on google maps - 2.5 pts
+  ○ Use target="_blank" to open the map in a new tab
+● Give the header a light colored solid background - 2.5 pts
+● Make all the text in the header black - 2.5 pts  -->
+  <header>
+    <h1 id="headerName">Cafe Telegraph Smoke Shack</h1>
+
+    <a href="http://www.cafetelegraph.com/Images/Jan2023_Cafe_Telegraph_Menu.pdf" class="links menu" target="_blank">Menu</a>
+    <a href="https://www.google.com/maps/place/Cafe+Telegraph+Smoke+Shack/@38.5111969,-90.2951361,17z/data=!4m14!1m7!3m6!1s0x87d8b7db5bb65899:0x77d8713fd483b07c!2sCafe+Telegraph+Smoke+Shack!8m2!3d38.5111934!4d-90.2910402!16s%2Fg%2F1hc7p7qf8!3m5!1s0x87d8b7db5bb65899:0x77d8713fd483b07c!8m2!3d38.5111934!4d-90.2910402!16s%2Fg%2F1hc7p7qf8" class="links" id="mapLocation" target="_blank">
+      Map
+    </a>
+
+  </header>
+
+
+
+
+  <!-- ● Give the main an id of jumbotron - (A jumbotron indicates a big box for calling extra
+attention to some special content or information.) -2.5 pts
+    ○ Apply a background image to this section -2.5 pts
+    ○ Set the text color of this section to a contrasting color, so that the text is easily
+readable - 2.5 pts
+    ○ Include the name of the restaurant in an h1 tag - 2.5 pts
+    ○ Include the restaurant's phone number - 2.5 pts
+■ Add a tel: link so that users can directly call this number on mobile devices.
+      https://en.wikipedia.org/wiki/Uniform_Resource_Identifier#:~:text=the%20followi
+      ng%20figure%20displays%20example%20uris%20and%20their%20component%
+      20parts
+○ Include the restaurant's full address - 2.5 pts
+■ Add a geo: link so that users can directly open the address in their
+navigation app on mobile devices.
+      https://en.wikipedia.org/wiki/Geo_URI_scheme  -->
+  <main id="jumbotron">
+
+    <h1 id="jumbotronName">Cafe Telegraph Smoke Shack</h1>
+
+    <a class="links" id="callLink" href="tel:+13142009952">Call&nbsp;Here</a>
+    <a class="links" id="mapLink" href="geo:38.51123043908183,-90.29053345788006">Location</a>
+
+  </main>
+
+
+
+
+  <!--  Menu
+○ Include a short menu of 5 entrees - 2.5 pts each
+■ Each entree must include the name
+■ Each entree must include a short description
+■ Each entree must include the price
+■ Apply a different background color to each entry
+○ Include a link to their full menu - 2.5 pts
+■ Use target="_blank" to open the menu in a new tab 
+○ Give this section a solid background color (other than white) and a contrasting text
+color - 2.5 pts -->
+  <div id="menuItemsDIV">
+
+    <a href="http://www.cafetelegraph.com/Images/Jan2023_Cafe_Telegraph_Menu.pdf" class="links menu" target="_blank">Menu</a>
+
+    <div id="Appetizers">
+      <h1 class="menuItems">Appetizers</h1>
+      <dl class="menuItems">
+        <dt>Hancock Pretzel Nuggets <em>- $9.99</em></dt>
+        <dd>Warm homemade pretzel nuggets buttered and salted, served with a side Gringo cheese</dd>
+      </dl>
+
+      <dl class="menuItems">
+        <dt>Affton THick Cut bacon <em>- $12.49</em></dt>
+        <dd>Maple thick cut beer battered bacon strips smoked to perfection, deep fried with a side of sweet Asian chili sauce.</dd>
+      </dl>
+    </div>
+
+
+
+    <div id="Sandwiches">
+      <h1 class="menuItems">Sandwiches</h1>
+      <dl class="menuItems">
+        <dt>Smoked chicken cheese steak<em>- $13.99</em></dt>
+        <dd>Smoked chicken on a Hoagie roll with grilled peppers, onions. and Gringo cheese.</dd>
+      </dl>
+
+      <dl class="menuItems">
+        <dt>St. Simon Chicken <em>- $13.99</em></dt>
+        <dd>Made in three classic ways
+          breaded and fried, grilled or blackened. Served on a bun with choice of sauce on the side.</dd>
+      </dl>
+    </div>
+
+
+
+    <div id="Pizza">
+      <h1 class="menuItems">Pizzas</h1>
+      <dl class="menuItems">
+        <dt>Dave’s Meat Lovers Special <em>- 16” $27.99 / 12” $21.99</em></dt>
+        <dd>Pepperoni, hamburger, Italian sausage, ham,bacon and our Mozz/Provel blend.</dd>
+      </dl>
+
+      <dl class="menuItems">
+        <dt>Vianney Deluxe<em>- 16” $27.99 / 12” $21.99</em></dt>
+        <dd>Italian sausage, pepperoni, mushrooms,green peppers, onions, and Mozz/Provel blend.</dd>
+      </dl>
+    </div>
+
+
+
+    <div id="Desserts">
+      <h1 class="menuItems">Desserts</h1>
+      <dl class="menuItems">
+        <dt>Bills Sweet Hand grenades <em>- $7.99</em></dt>
+        <dd>10 donuts tossed in powdered sugar or cinnamon sugar.</dd>
+      </dl>
+
+      <dl class="menuItems">
+        <dt>SMMA Slice ‘o Pie <em>- $4.99</em></dt>
+        <dd>Pecan and Apple</dd>
+      </dl>
+    </div>
+
+
+
+  </div>
+
+
+
+  <!-- Include an embedded map for the restaurant - 2. 5 pts
+○ You can get the necessary code for the required <iframe> directly from Google Maps
+https://support.google.com/maps/answer/144361?co=GENIE.Platform%3DDeskto
+p&hl=en#:~:text=embed%20a%20map%20or%20directions
+○ Give this section a solid background color (other than white) and a contrasting text
+color - 2.5 pts -->
+  <div id="map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3121.9916671546493!2d-90.29418123359069!3d38.510903068476736!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87d8b7db5bb65899%3A0x77d8713fd483b07c!2sCafe%20Telegraph%20Smoke%20Shack!5e0!3m2!1sen!2sus!4v1684948839388!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" id="interactableMAP"></iframe>
+  </div>
+
+
+
+<!-- Include a copyright line for the restaurant, which reads: "© 2021 Restaurant Name"
+- 2.5 pts
+○ Use &copy; to insert the copyright symbol.
+○ Replace "2021" with the current year.
+○ Replace "Restaurant Name" with the restaurant's name.
+● Center the copyright line - 2.5 pts
+● Give the footer a dark colored solid background - 2.5 pts
+● Make all the text in the footer white - 2.5 pts  -->
+  <footer id="copyright">
+    <p id="copyrightTEXT">&copy; 2023 Cafe Telegraph Smoke Shack</p>
+
+  </footer>
+
+</div>
+
+</body>
+
+
+
+
+</html>

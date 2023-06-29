@@ -1,0 +1,561 @@
+
+/*
+header{
+  border: 1px solid blue;
+  background-color: green;
+}
+footer{
+  border: 1px solid red;
+}
+main, .tagline{
+  border: 1px solid yellow;
+}
+.header-text{
+  border: 1px solid green;
+}
+
+.container-for-all-main{
+  border: 1px solid blue;
+}
+.education-items{
+  border: 1px solid red;
+}
+
+.home-text{
+  border: 1px solid purple;
+}
+*/
+
+
+*{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+  background-color: #ffffff;
+
+  /* adds margins around the whole project */
+  margin: 20px 30px;
+}
+
+
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ HEADER ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+  /* makes header a flexbox and aligns items to the left side and makes them go left-right */
+header{
+  display: flex;
+  align-content: flex-start;
+  flex-direction: row;
+  align-items: center;
+
+  background-color: #ff7547;
+
+  /* adds a border to the left and right sides the top and bottom are covered from nav and footer */
+  border-top: 2px solid black;
+  border-right:2px solid black;
+  border-left:2px solid black;
+}
+
+.Logo{
+  width: 150px;
+  height: 150px;
+
+  padding: 0 20px;
+}
+
+.header-text{
+  font-size: 30px;
+}
+
+  /* NOTHING BUT THE BEST Text - gives own flexbox and aligns it*/
+.tagline{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+
+  font-size: 10px;
+
+  /*makes the text slightly to the right more */
+  margin-left: 5px;
+
+}
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+
+
+
+
+  /*`````````````````````````````````````````` NAV BAR ```````````````````````````````````````````` */
+    /* nav bar makes it a flexbox that wraps and makes it display up-down from column and aligns them to the left */
+  nav{
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid rgb(0, 0, 0);
+    flex-direction: column;
+    align-content: flex-start;
+    
+    background-color: #ffefea;
+  }
+
+  /* This is here to show that your on the home page */
+  .home-tab{
+    font-size: 17px;
+    text-decoration: underline;
+    font-weight: bold;
+  }
+
+  /* changes the font for all of the tabs you can "click on" */
+  .nav-tab{
+    font-size: 17px;
+    list-style-type: none;
+  }
+
+    /* gets rid of the underline on the link and makes the font black */
+  .nav-tab a{
+    text-decoration: none;
+    color: black;
+    
+  }
+
+  /* when focused and hovered over will change to grey background and white font give oval backgrounds */
+  .nav-tab > a:hover{
+    background-color: #2d2d2d;
+    color: white;
+    font-size: 20px;
+
+    /* adds padding to the top and bottom of the background color to resemble a button */
+    padding: 5px 10px;
+    /* changes the border to be a oval */
+    border-radius: 60%; 
+
+    border: 2px solid black;
+  }
+
+  /* When the Home tab is hovered over this changes the underline to white and the sie to match the font size */
+.home-tab:hover, .home-tab:focus{
+  text-decoration-color: white;
+  text-decoration-line: 20px;
+}
+
+/* focused the tabs will change the same as the hover */
+a:focus{
+  background-color: #2d2d2d;
+  color: white;
+  font-size: 20px;
+
+   /* changes the border to be a oval */
+  border-radius: 60%; 
+
+  /* adds padding to the top and bottom of the background color to resemble a button */
+  padding: 5px 10px;    
+}
+
+
+  /*````````````````````````````````````````````````````````````````````````````````````````````` */
+
+
+
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! MAIN !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+  main{
+    background-color: #f8f8f8;
+    
+    /* Centers the items in the main  */
+    padding-left:  50px;
+    padding-right: 50px;
+    padding-top: 20px;
+
+    /* adds a border to the left and right sides the top and bottom are covered from nav and footer */
+    border-right:2px solid black;
+    border-left:2px solid black;
+  }
+
+  /* Picture of me will be small and give it a round black border and centers image  */
+  .head-shot{
+    border-radius: 50%;
+    border: 5px solid black;
+    width: 170px;
+    height: 200px;
+
+
+    /* centers the img */
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+  /* The flex box for all the items in main - image, Home and text, Education, logo, majors, link */
+  /*This holds the Home items and the Education items - Gives it a flexbox and makes the items go up-down */
+  .container-for-all-main{
+    display: flex;
+    flex-direction: column;
+  
+    justify-content: flex-start;
+  }
+
+
+
+
+
+  /* Font size for the headers  */
+  .home, .education{
+    font-size: 25px;
+  }
+
+    /* makes education items a flexbox and centers them while making them go  */
+  .education-items{
+
+    /* Adds a margin so theres space between Education and the Home content */
+    margin-top: 50px;
+
+    /* adds padding to the bottom so theres space from the link and the footer */
+    padding-bottom: 20px;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+  }
+
+    /* This is the unordered list of all the items getting rid of the bullet points */
+  .majors{
+    list-style: none;
+  }
+
+    /* Gives padding to the bottom of both majors so they are more separate from each other and logo */
+  .major{
+    padding-bottom: 10px ;
+  }
+
+
+  /* Makes ranken logo small and gives padding to the bottom to separate it from link */
+  .ranken-logo{
+    padding-bottom: 20px;
+    width: 70px;
+    height: 70px;
+
+  }
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+
+
+
+
+
+/* ######################################### FOOTER #################################################*/
+  /* adds padding to the top of the footer to not be so close to link on smaller screens */
+footer{
+  padding-top: 20px;
+  padding-bottom: 5px;
+  background-color: #ff7547;
+  border: 2px solid rgb(0, 0, 0);
+}
+
+  /* gives it a flexbox that puts everything up-down and centers them within the flexbox */
+.footer-info{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+  /* Gives the text no padding so their touching without this they would be very far apart */
+.info{
+  margin: 0;
+  padding: 0;
+}
+
+  /* puts the copy right text in its own flexbox so we can send it to the far right  */
+.copyright{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  /* adds padding to the right so it isn't so close to the border of the footer */
+  padding-right: 10px;
+}
+
+/* ################################################################################################*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* If screen is 600px do this crap */
+@media only screen and (min-width:600px){
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ HEADER ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.header-text{
+  font-size: 40px;
+}
+
+
+.Logo{
+  width:250px;
+  height:250px;
+}
+
+.tagline{
+  font-size: 15px;
+}
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 900px){
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ HEADER ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+
+.Logo{
+  width:250px;
+  height:250px;
+}
+
+.header-text{
+  font-size: 45px;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 1200px){
+
+  /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ HEADER ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+  .Logo{
+    width:250px;
+    height:250px;
+  }
+
+  .header-text{
+    font-size: 60px;
+  }
+
+.tagline{
+  /*makes the text slightly to the right more */
+  margin-left: 10px;
+}
+
+  /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+
+  /*`````````````````````````````````````````` NAV BAR ```````````````````````````````````````````` */
+    /* puts the nav bar in a flexbox and spaces the tabs equally and centers the tabs */
+  nav{
+    display: flex;
+    flex-direction: row;
+    
+    align-content: space-evenly;
+  }
+
+
+/*
+.home-tab{
+  font-size: 26.5px !important;
+}   */
+
+
+  /* changes the font size of the tabs */
+  .nav-tab{
+    font-size: 25px;
+  }
+
+
+
+  /*````````````````````````````````````````````````````````````````````````````````````````````` */
+
+
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! MAIN !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* adds a flexbox to the main and aligns items left-right */
+main{
+    display: flex;
+    padding: 25px 0;
+
+    align-items: flex-start;
+  }
+
+  /* changes picture size of me */
+  .head-shot{
+    width: 350px;
+    height: 420px;
+
+    /* adds 30px on the left of the image */
+    margin-left: 30px;
+  }
+
+
+  /*This holds the Home items and the Education items - Gives it a flexbox and makes the items go up-down */
+  .container-for-all-main{
+    /* adds padding to the left and right of the flex boxes of the Education and Home items */
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+
+
+  /* Changes the size of the Home and Education headers */
+  .home, .education{
+    font-size: 25px;
+  }
+
+    /* Gives a flexbox to all the items inside of Education - centers them and makes them go right-left */
+  .education-items{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+
+  }
+
+    /* makes the 2 majors after education have no bullet points */
+  .majors{
+    list-style: none;
+  }
+
+    /* adds padding to the top and bottom to allow them to be more spaced from one another */
+  .major{
+    padding: 5px 0;
+  }
+
+  /* adds padding to the left and right so its not close to the majors or the link */
+  .ranken-logo{
+    padding: 0 20px;
+    width: 70px;
+    height: 70px;
+  }
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+
+/* ######################################### FOOTER #################################################*/
+  /* makes the footer touch the main contents to avoid white space */
+footer{
+  margin-top: 0;
+}
+/* ##################################################################################################*/
+
+}
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 2500px){
+
+  /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ HEADER ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+
+  .Logo{
+    width:450px;
+    height:450px;
+  }
+
+  .header-text{
+    font-size: 100px;
+  }
+
+  .tagline{
+    font-size: 30px;
+  }
+  /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+
+  /*`````````````````````````````````````````` NAV BAR ```````````````````````````````````````````` */
+  /* changes font size of tabs */
+  nav a{
+    font-size: 35px;
+  }
+
+
+  /*````````````````````````````````````````````````````````````````````````````````````````````` */
+
+
+
+  /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! MAIN !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+    /* changes all text in the main */
+  main{
+    font-size: 25px;
+  }
+
+
+  .head-shot{
+    width: 550px;
+    height: 630px;
+  }
+
+/* Changes the size of the Home and Education headers */
+  .home, .education{
+    font-size: 35px;
+  }
+
+  .container-for-all-main{
+    /* adds padding to the left and right of the flex boxes of the Education and Home items */
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+
+  /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+
+
+  /* ######################################### FOOTER #################################################*/
+  /* makes the footer touch the main contents to avoid white space */
+  footer{
+    font-size: 20px;
+    margin-top: 0;
+}
+/* ##################################################################################################*/
+
+}
+
+
+
+
+
+
