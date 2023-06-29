@@ -1,0 +1,63 @@
+
+.all{
+  border: 4px solid black;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/*
+legend{
+  padding-top: 40px;
+}
+*/
+
+/* This is the lines that are above all the headers */
+hr{
+  border: 1px solid black;
+}
+
+
+
+/* this is all the things for the checkbox at the bottom */
+.same-checkbox{
+  width: 15px;
+  height: 15px;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* This is the Text about the same address checkbox */
+.same-address-container{
+  text-align: center;
+}
+
+
+
+
+
+@media screen and (min-width: 1200px) {
+  *{
+    font-size: 20px;
+  }
+
+/* this is all the things for the checkbox at the bottom */
+  .same-checkbox{
+    width: 20px;
+    height: 20px;
+  
+    margin: 10px;
+
+  }
+
+  
+/* This is the Text about the same address checkbox */
+  .same-address-container{
+    padding-top: 50px;
+  }
+}
+
+
+
+
