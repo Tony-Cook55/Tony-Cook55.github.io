@@ -78,17 +78,52 @@
 
 
 
-
+<!--   the original header that makes users download link on phones  
   <div class="column text-of-me text-center">
     <a class="resume_pdf_link" target="_blank" href="pictures/resume/Anthony_Cook_resume.pdf"><h1 class="py-5">View My Resume</h1></a>
   </div>
-
-
-<!--
-  <embed class="column text-of-me text-center">
-    <embed src="pictures/resume/Anthony_Cook_resume.pdf" title="My Resume"><h1 class="py-5">View My Resume</h1></embed>
-  </div>
 -->
+
+
+
+
+
+
+<!--TRYING TO MAKE RESUME SHOW AND CLOSE  -->
+
+
+  <div class="column text-of-me text-center">
+    <h1  class=""><button class="show_resume_btn py-5" type="button" onclick="Show_and_Hide_Resume()">Click To View My Resume</button></h1>
+  </div>
+
+  <!-- The div that contains the Resume that hides on button click -->
+  <div class="column text-of-me text-center" id="resumePic"    style="display:none"> <!-- style="display:none"  turns it off by default-->
+    <h2>TESTING!!<br> Hope No one looks on this page till I actually add my resume. If Someone is here uhhhh Hello?</h2>
+    <img src="pictures/about_me/guy_playing_tennis.jpg" alt="">
+  </div>
+
+  <!-- The Function that allows the div containing the resume pic to show and hide on click -->
+  <script>
+    function Show_and_Hide_Resume() {
+      var resume = document.getElementById("resumePic");
+      if (resume.style.display === "none") {
+        resume.style.display = "block";
+      } else {
+        resume.style.display = "none";
+      }
+    }
+    </script>
+
+
+<!--   this is a way to show the pdf of my resume live but is stupid 
+  <object type="application/pdf" data="pictures/resume/Anthony_Cook_resume.pdf#toolbar=0" class="resumePDF"></object>
+-->
+                                  <!-- width="1000" height="1070"             #toolbar=0   == gets rid of the download options on the top of page-->
+
+
+<!--TRYING TO MAKE RESUME SHOW AND CLOSE  -->
+
+
 
 
 

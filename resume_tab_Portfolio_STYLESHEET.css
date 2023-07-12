@@ -73,6 +73,29 @@ nav{
 
 
 
+/* THE BUTTON THAT SHOWS THE RESUME PIC ON AND OFF */
+.show_resume_btn{
+  background-color: #f6dbac;
+  border: #f6dbac;
+  text-shadow: 2px 2px 0px #ffffff, 3.5px 3.5px 0px #000000;
+
+  font-weight: 900;
+  line-height: 1;
+
+}
+
+/* when the screen is above the smallest size sets The button shadow accordingly */
+@media screen and (min-width: 600px) {
+  .show_resume_btn{
+    text-shadow: 5px 5px 0px #ffffff, 8px 8px 0px #000000;
+  }
+}
+/* THE BUTTON THAT SHOWS THE RESUME PIC ON AND OFF */
+
+
+
+
+
 
 /* This changes the "MY RESUME" Text */
 h1 {
