@@ -54,6 +54,11 @@ video {
 }
 
 
+/* This is a screenshot of the video but allows me to add a image map over the buttons to do things */
+.record_pic_transparent{
+  opacity: 0;
+}
+
 
 * {
   box-sizing: border-box;
