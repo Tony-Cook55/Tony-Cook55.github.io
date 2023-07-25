@@ -10,7 +10,26 @@ body{
 
 
 
+/* aaaaaaaaaaaa   THIS IS FOR THE BOOKSTORE LINKS UNDER ACCOMPLISHMENTS TAB  aaaaaaaaaaaaaaa */
+.bookstores{
+  color: white;
+  text-decoration: underline;
+}
 
+.bookstores:hover{
+  color: #f6dbac;
+}
+
+.bookstores:focus{
+  color: #f6dbac;
+}
+/* aaaaaaaaaaaa   THIS IS FOR THE BOOKSTORE LINKS UNDER ACCOMPLISHMENTS TAB  aaaaaaaaaaaaaaa */
+
+
+
+.empty_Bullet_List{
+  list-style-type: none;
+}
 
 
 

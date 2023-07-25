@@ -124,7 +124,7 @@ body{
   font-family: 'Fredoka', sans-serif;
 }
 
-/* Makes images within the cards shrink accordingly */
+/* Makes the images of the website preview within the cards shrink accordingly */
 .card-img-top {
   width: 100%;
   height: 30vw;
@@ -145,9 +145,9 @@ body{
     margin-right: 50px;
   }
 
-  .card-img-top {
+  .card-img-top { 
     width: 100%;
-    height: 35vw;
+    height: 30vw;
     object-fit: fill;
   }
 
@@ -190,6 +190,20 @@ p{
 }
 
 
+
+/* This is for the picture of my grade I received on the Ranken Bookstore Site */
+.grade{
+  width: 80%;
+  height: 3.5vw;
+}
+
+
+@media screen and (min-width: 600px) {
+  .grade{
+    width: 50%;
+    height: 1.7vw;
+  }
+}
 
 /* ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ CARD ITEMS INSIDE MODALS ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */
 
