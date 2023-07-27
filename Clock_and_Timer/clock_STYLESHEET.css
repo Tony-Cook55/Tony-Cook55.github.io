@@ -1,0 +1,152 @@
+/* this is there to show the outline of the col's */
+/*
+.background_COL{
+  border: 1px solid black;
+}
+*/
+
+
+/* this adds the font that is inside a folder in the pictures folder */
+@font-face {
+  font-family: 'digital-7regular';
+  src: url("pictures/webfont_Clock_Font/digital-7-webfont.woff2") format('woff2'),
+        url("pictures/webfont_Clock_Font/digital-7-webfont.woff") format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+/* Changes the margin for the container to move up and down */
+.main_container{
+  margin-top: 140px;
+}
+
+/* on bigger screens changes the Margin in which the container holding everything goes up and down */
+@media screen and (min-width: 600px) {
+
+  .main_container{
+    margin-top: 70px;
+  }
+
+}
+
+
+/* actual picture of the clock */
+.clock_pic{
+  width:100%
+}
+
+
+
+/*  This adds the red glow to the text  */
+.clock_Glow {
+  color: red;
+  text-shadow:
+    /* 0 0 7px red, */
+    0 0 10px red,
+    0 0 21px red,
+    0 0 42px red,
+    0 0 82px red,
+    0 0 92px red;
+
+      /*   
+  box-shadow:
+    -webkit-box-reflect:below 1px linear-gradient(transparent, #0005);
+  */
+}
+
+
+
+
+/* this is what is added to every output to change font, color, and size */
+.clock_Font{
+  /* font-family: 'Orbitron', sans-serif; */
+  font-family: 'digital-7regular';
+  color: red;
+
+  font-size: 2.5em;
+}
+
+
+/* this changes the size of the colons : */
+.colon_Size{
+  font-size: 2.5em;
+}
+
+
+
+
+
+
+/* on bigger screens change the font size */
+@media screen and (min-width: 600px) {
+
+    /* this is what is added to every output to change font, color, and size */
+  .clock_Font{
+    font-size: 8em;
+  }
+
+  /* this changes the size of the colons : */
+  .colon_Size{
+    font-size: 8em;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* this is all the stuff to ensure the text stays center with the image on screen flex */
+.container {
+  position: relative;
+  text-align: center;
+}
+
+
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+
+
+
+/* This is the main class that will make the text in the center */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
