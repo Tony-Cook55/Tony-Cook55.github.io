@@ -36,10 +36,11 @@
     <title>Record Collection</title>
 
     <!-- FAVICONS -->
-    <link rel="apple-touch-icon" sizes="180x180" href="pictures/favicon_io/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="pictures/favicon_io/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="pictures/favicon_io/favicon-16x16.png">
-    <link rel="manifest" href="pictures/favicon_io/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="pictures//favicon/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="pictures/favicon/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="pictures/favicon/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="pictures/favicon/favicon_io/site.webmanifest">
+
 
   </head>
 
@@ -70,6 +71,14 @@
         <a class="nav-item nav-link" href="coursework_tab_Portfolio.html">Coursework</a>
         <a class="nav-item nav-link" href="contact_tab_Portfolio.html">Contact</a>
       </div>
+
+
+      <!-- SEARCH BAR -->
+      <form class="d-flex">                 <!-- LOOKS FOR searchInput -->
+        <input class="form-control me-2" type="search" id="searchInput"  placeholder="Search Items"  aria-label="Search">
+      </form>
+
+
     </div>
   </nav>
 
@@ -81,9 +90,108 @@
 
 
 
+  <div class="column text-center     records">
+    <h1 class="py-5">Frank Sinatra</h1>
+  </div>
+
+
+<!-- Button trigger modal -->
+<div class="records"> <!-- FOR ITEM TO COME UP IN SEARCH MUST HAVE THIS AROUND IT -->
+
+  <div ontouchstart="">
+    <div class="button d-flex justify-content-center  ">
+      <button type="button" class="btn btn-primary " data-toggle="modal"           data-target="#my_hobby_BAD_button">
+        Frank <!-- Button Text -->
+      </button>
+    </div>
+  </div>
+
+</div>
+
+
+
+<div class="column text-center     records">
+  <h1 class="py-5">Andy Williams</h1>
+</div>
+
+<div class="recordNames"> <!-- FOR ITEM TO COME UP IN SEARCH MUST HAVE THIS AROUND IT -->
+
+    <div ontouchstart="">
+      <div class="button d-flex justify-content-center ">
+        <button type="button" class="btn btn-primary " data-toggle="modal"           data-target="#my_hobby_BAD_button">
+          Rain Drops <!-- Button Text -->
+        </button>
+      </div>
+    </div>
+
+</div>
+
+
+<div class="records">
+
+  <div class="button d-flex justify-content-center    records">
+    <button type="button" class="btn btn-primary " data-toggle="modal"           data-target="#my_hobby_BAD_button">
+      2 <!-- Button Text -->
+    </button>
+  </div>
+
+</div>
+
+
+<div class="records">
+
+  <div class="button d-flex justify-content-center    records">
+    <button type="button" class="btn btn-primary " data-toggle="modal"           data-target="#my_hobby_BAD_button">
+      31 <!-- Button Text -->
+    </button>
+  </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+<!-- This displays the error message of "No Results Found" after a failed search -->
+<output id="errorOutput"></output>
+<!--  SEARCH SEARCH SEARCH This is the things for the search bar SEARCH SEARCH SEARCH -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   <div class="column text-of-me text-center">
-    <h1 class="py-5"    id="back_to_top">My Previous Work</h1>
+    <h1 class="py-5"    id="back_to_top">My Record Collection</h1>
   </div>
 
 
@@ -91,15 +199,11 @@
 
 
 
-  <div class="column text-of-me text-center">
-    <h2 class="py-5">Collection of my Progression</h2>
-  </div>
 
 
 
-  <div class="column text-of-me text-center">
-    <p class="pb-5"><em>* NOT ALL PROJECTS ARE SUITABLE FOR SMALL DEVICES *</em></p>
-  </div>
+
+
 
 
 

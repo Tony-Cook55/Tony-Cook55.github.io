@@ -9,6 +9,10 @@ body{
 
 
 
+/*  This changes the No results found output for search bar */
+#errorOutput{
+  font-size: 60px;
+}
 
 
 
@@ -18,7 +22,7 @@ body{
 
 /* adds the background picture for the navbar */
 nav{
-  background-image: url("pictures/record_label_pic/70s-bold-multicolor-stripes-retro-wallpaper-mural-Plain-scaled.png");
+  background-image: url("pictures/backgrounds/records-texture.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
