@@ -9,28 +9,23 @@ body{
 
 
 
-/*  This changes the No results found output for search bar */
-#errorOutput{
-  font-size: 60px;
-}
-
-
-
 
 
 /* ~~~~~~~~~~~~~~~~~~ NAVBAR ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 /* adds the background picture for the navbar */
-nav{
-  background-image: url("pictures/backgrounds/records-texture.jpg");
+nav{  
+  background-image: url("pictures/backgrounds/spining_record_rainbow.webp");
+  /*
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  */
 }
 
 
-/* This changes the top text says "TONY COOK" in the nav*/
+/* This changes the top text says "My Records" in the nav*/
 .navbar-brand h1{
   text-transform: uppercase;
   font-weight: 900;
@@ -72,6 +67,34 @@ nav{
 
 
 
+
+
+/* SEARCH SEARCH SEARCH    SEARCH BAR    SEARCH SEARCH SEARCH */
+
+/* This is the placeholder text inside the search bar */
+.search_Bar_font{
+  font-family: 'Shrikhand', cursive;
+
+  margin-left: 3vw;
+
+  width: 85vw;
+}
+
+
+@media screen and (min-width: 600px) {
+  .search_Bar_font{
+    margin-left: 6.5vw;
+
+    
+    width: 40vw;
+  }
+}
+
+/*  This changes the No results found output for search bar */
+#errorOutput{
+  font-size: 60px;
+}
+/* SEARCH SEARCH SEARCH    SEARCH BAR    SEARCH SEARCH SEARCH */
 
 
 
@@ -126,6 +149,14 @@ body{
   margin-right: 50px;
 
   font-family: 'Fredoka', sans-serif;
+
+  border: 0;
+}
+
+/* Gets rid of the white border around the thing holding all the contents in card */
+.card-body{
+  background-color: #f6dbac;
+  border: 0;
 }
 
 /* Makes images within the cards shrink accordingly */
@@ -172,7 +203,7 @@ line-height: 1;
 color: #000000;
 font-family: 'Shrikhand', cursive;
 /* font-family: Futura, Helvetica, sans-serif;  */
-font-size: 5vw;
+font-size: 4vw;
 }
 
 
@@ -183,7 +214,7 @@ p{
 
 @media screen and (min-width: 600px) {
   h2{
-  font-size: 3vw;
+  font-size: 2vw;
   }
 
 
@@ -210,13 +241,20 @@ p{
 
 /* This is the text that is on the top left when a module is opened */
 .modal-title{
-  font-size: 4vw;
+  font-size: 6vw;
+}
+
+@media screen and (min-width: 600px) {
+  .modal-title{
+    font-size: 4vw;
+  }
 }
 
 /* This is everything behind the .modal-text */
 .modal-header { 
 
   padding: 30px 30px;
+  border: 0;
 
 /* same background image as the navbar */
   background-image: url("pictures/record_label_pic/70s-bold-multicolor-stripes-retro-wallpaper-mural-Plain-scaled.png");
@@ -234,9 +272,10 @@ p{
 }
 
 
-
-
-
+/* Gets rid of the dumb white line */
+.modal-footer { 
+  border: 0;
+}
 
 
 
@@ -351,13 +390,56 @@ h2 a:hover{
 
 
 
-
-
-
-
-
-
 /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ MODALS WITH CARD OF WORK INSIDE $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+
+
+
+
+
+
+
+
+
+/*  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ RECORDS ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */
+.box-around-records{
+  border: 4px solid black;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  padding: 15px;
+
+  background-color: #176e82;
+}
+
+.card-title{
+  color: #f6dbac;
+}
+
+.record-name{
+
+}
+
+
+.record-pic{
+  /*  margin-top: 20px ;  */
+
+  height: 45vw;
+
+}
+
+
+/* makes the font size for the button fit the screen better */
+@media screen and (min-width: 600px) {
+  .record-pic{
+    height: 30vw;
+  }
+
+}
+/*  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ RECORDS ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */
+
+
+
+
+
 
 
 

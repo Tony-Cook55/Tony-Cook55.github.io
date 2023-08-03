@@ -63,20 +63,14 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav">
-        <a class="nav-item nav-link" href="index.html">Home</a>
-        <a class="nav-item nav-link active" href="portfolio_tab.html">Portfolio</a><span class="sr-only">(current)</span>
-        <a class="nav-item nav-link" href="about_me_portfolio.html">About Me</a>
-        <a class="nav-item nav-link" href="resume_tab_Portfolio.html">Resume</a>
-        <a class="nav-item nav-link" href="coursework_tab_Portfolio.html">Coursework</a>
-        <a class="nav-item nav-link" href="contact_tab_Portfolio.html">Contact</a>
-      </div>
 
 
-      <!-- SEARCH BAR -->
+
+      <!-- ```````````````````````  SEARCH BAR ``````````````````````````````````-->
       <form class="d-flex">                 <!-- LOOKS FOR searchInput -->
-        <input class="form-control me-2" type="search" id="searchInput"  placeholder="Search Items"  aria-label="Search">
+        <input class="form-control    search_Bar_font" type="search" id="searchInput"  placeholder="Search Records"  aria-label="Search">
       </form>
+      <!-- ```````````````````````  SEARCH BAR ``````````````````````````````````-->
 
 
     </div>
@@ -95,18 +89,91 @@
   </div>
 
 
-<!-- Button trigger modal -->
 <div class="records"> <!-- FOR ITEM TO COME UP IN SEARCH MUST HAVE THIS AROUND IT -->
 
-  <div ontouchstart="">
-    <div class="button d-flex justify-content-center  ">
-      <button type="button" class="btn btn-primary " data-toggle="modal"           data-target="#my_hobby_BAD_button">
-        Frank <!-- Button Text -->
-      </button>
+    <!-- Button trigger modal -->
+    <div ontouchstart="">
+      <div class="button d-flex justify-content-center">
+        <button type="button" class="btn btn-primary " data-toggle="modal"           data-target="#frank_sinatra">
+          Frank Sinatra <!-- Button Text -->
+        </button>
+      </div>
     </div>
-  </div>
+
+    <!-- Modal -->
+    <div class="modal fade"        id="frank_sinatra"       aria-labelledby="frank_sinatra"           tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered  modal-xl" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+
+            <!-- Header Text in Modal -->
+            <h1 class="modal-title">          Frank Sinatra Records      </h1>
+
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">   <i class="bi bi-x-square-fill"></i>  <!-- Close Icon inside Modal -->  </span>
+            </button>
+          </div>
+
+          <div class="modal-body">
+            <!-- Content inside the modal -- CARD STARTS NOW --  -->
+            <div class="row text-center">
+              <div class="col">
+                <div class="card">
+                  <div class="card-body">
+
+
+                    <!--Content Inside Card -->
+
+                    <div class="box-around-records">
+                      <h2 class="card-title"> Frank Sinatra A Man And His Music </h2>
+                      <img alt="" class="record-pic" src="pictures/record_vinyls/Frank_Sinatra/FRANK_SINATRA_a_man_and_his_music.jpg">
+                    </div>
+
+                    <div class="box-around-records">
+                      <h2 class="card-title  record-name"> Sinatra Sinatra - A Collection of Frank's Favorites </h2>
+                      <img alt="" class="record-pic" src="pictures/record_vinyls/Frank_Sinatra/FRANK_SINATRA_sinatra_sinatra_a_collection_of_his_favorites.jpg">
+                    </div>
+
+                    <div class="box-around-records">
+                      <h2 class="card-title  record-name"> Sinatra She Shot Me Down </h2>
+                      <img alt="" class="record-pic" src="pictures/record_vinyls/Frank_Sinatra/FRANK_SINATRA_she_shot_me_down.jpg">
+                    </div>
+
+
+
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

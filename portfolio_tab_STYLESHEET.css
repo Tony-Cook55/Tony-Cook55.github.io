@@ -122,6 +122,21 @@ body{
   margin-right: 50px;
 
   font-family: 'Fredoka', sans-serif;
+
+  border: 0;
+}
+
+
+/* This is the picture of the preview of each site */
+/*
+.card-img-top{
+  border: 3px solid black;
+}
+*/
+
+/* This is the actual Text under the picture inside the modal */
+.card-title{
+  color: #000000;
 }
 
 /* Makes the images of the website preview within the cards shrink accordingly */
@@ -220,13 +235,20 @@ p{
 
 /* This is the text that is on the top left when a module is opened */
 .modal-title{
-  font-size: 4vw;
+  font-size: 6vw;
+}
+
+@media screen and (min-width: 600px) {
+  .modal-title{
+    font-size: 4vw;
+  }
 }
 
 /* This is everything behind the .modal-text */
 .modal-header { 
 
   padding: 30px 30px;
+  border: 0;
 
 /* same background image as the navbar */
   background-image: url("pictures/record_label_pic/70s-bold-multicolor-stripes-retro-wallpaper-mural-Plain-scaled.png");
@@ -244,6 +266,10 @@ p{
 }
 
 
+/* Gets rid of the dumb white line */
+.modal-footer { 
+  border: 0;
+}
 
 
 
