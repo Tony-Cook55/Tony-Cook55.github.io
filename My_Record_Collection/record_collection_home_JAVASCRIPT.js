@@ -10,7 +10,7 @@ window.onload = (event) => {
 
 
     // store name elements in array-like object
-    const namesFromDOM = document.getElementsByClassName("records");  // LOOKS FOR CLASS NAME
+    const namesFromDOM = document.getElementsByClassName("find-records");  // LOOKS FOR CLASS NAME
 
 
 
@@ -97,3 +97,17 @@ window.onload = (event) => {
 
 
 };
+
+
+
+
+
+
+
+
+
+
+
+
+
+

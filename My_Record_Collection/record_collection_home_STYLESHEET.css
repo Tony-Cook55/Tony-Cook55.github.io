@@ -63,7 +63,14 @@ nav{
 
   color: #E63E23;
 }
-/* N~~~~~~~~~~~~~~~~~~ NAVBAR ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+
+/* This is the little icon when screen is shrunk and nav items are hidden */
+.custom-toggler.navbar-toggler{
+  color: white;
+  /*  border: 3px solid white;   */
+}
+/* ~~~~~~~~~~~~~~~~~~ NAVBAR ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 
 
@@ -157,6 +164,10 @@ body{
 .card-body{
   background-color: #f6dbac;
   border: 0;
+
+  
+  margin: 0;
+  padding: 0;
 }
 
 /* Makes images within the cards shrink accordingly */
@@ -241,7 +252,7 @@ p{
 
 /* This is the text that is on the top left when a module is opened */
 .modal-title{
-  font-size: 6vw;
+  font-size: 8vw;
 }
 
 @media screen and (min-width: 600px) {
@@ -255,6 +266,7 @@ p{
 
   padding: 30px 30px;
   border: 0;
+
 
 /* same background image as the navbar */
   background-image: url("pictures/record_label_pic/70s-bold-multicolor-stripes-retro-wallpaper-mural-Plain-scaled.png");
@@ -401,36 +413,67 @@ h2 a:hover{
 
 
 /*  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ RECORDS ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */
+
+/* this is the first name shown on the top of screen to allow room for sticky navbar */
+.top-name{
+  padding-top: 100px;
+}
+@media screen and (min-width: 600px) {
+  .top-name{
+    padding-top: 200px;
+  }
+}
+
+
+
+/* THIS is the big h1 name of the artist */
+.artists-name{
+  padding-bottom: 20px;
+}
+
+
+
 .box-around-records{
   border: 4px solid black;
-  margin-bottom: 30px;
-  margin-top: 30px;
-  padding: 15px;
+
+  margin-bottom: 50px;
+
+
+  padding: 30px;
 
   background-color: #176e82;
 }
 
-.card-title{
-  color: #f6dbac;
-}
 
+
+
+/* The actual name of the record */
 .record-name{
-
+  color: #f6dbac;
+  font-size: 6vw;
 }
+
+@media screen and (min-width: 600px) {
+  .record-name{
+    color: #f6dbac;
+    font-size: 4vw;
+  }
+}
+
 
 
 .record-pic{
-  /*  margin-top: 20px ;  */
-
-  height: 45vw;
+  max-width: 100%;
+  height: auto;
 
 }
 
 
-/* makes the font size for the button fit the screen better */
+/*this changes pic size to look better on desktop */
 @media screen and (min-width: 600px) {
   .record-pic{
-    height: 30vw;
+    max-width: 100%;
+    height: auto;
   }
 
 }
