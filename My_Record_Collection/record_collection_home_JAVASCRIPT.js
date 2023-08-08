@@ -58,7 +58,7 @@ window.onload = (event) => {
             document.getElementById("errorOutput").innerHTML = "";
 
             // THIS HIDES THE Clear Searchbar BUTTON ON A CORRECT SEARCH
-            document.getElementById("hide_clear_button").style.display = "none";
+            //document.getElementById("hide_clear_button").style.display = "none";
 
           }
 
@@ -75,8 +75,10 @@ window.onload = (event) => {
             // THIS IS THE ERROR MESSAGE
             document.getElementById("errorOutput").innerHTML = "No Records Found";
 
+
+
             // THIS SHOWS THE Clear Searchbar BUTTON ON A BAD  SEARCH
-            document.getElementById("hide_clear_button").style.display = "flex";
+            //document.getElementById("hide_clear_button").style.display = "flex";
 
 
             /*
