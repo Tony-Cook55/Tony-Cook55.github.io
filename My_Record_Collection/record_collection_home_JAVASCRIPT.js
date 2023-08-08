@@ -35,13 +35,31 @@ window.onload = (event) => {
         nameElement.style.display = "block";
         //window.open("#back_to_top");
 
+        // THIS HIDES THE ERROR MESSAGE ON A CORRECT SEARCH
+        document.getElementById("errorOutput").style.display = "none";
 
-        // This displays no message in the output errorOutput
-        document.getElementById("errorOutput").innerHTML = "";
+
+        // THIS HIDES THE Clear Searchbar BUTTON ON A CORRECT SEARCH
+        document.getElementById("hide_clear_button").style.display = "none";
+
+
       }
-      else if(!name.includes(searchQuery)){
+      else if(!name.includes(searchQuery)){    // IF SEARCH IS BAD DO THIS
         // no match, don't display name
         nameElement.style.display = "none";
+
+        // THIS SHOWS THE ERROR MESSAGE ON A BAD SEARCH
+        document.getElementById("errorOutput").style.display = "block";
+
+        // THIS IS THE ERROR MESSAGE
+        document.getElementById("errorOutput").innerHTML = "No Records Found";
+
+        // THIS HIDES THE FOOTER AND THE BACK TO TOP BUTTON
+        document.getElementById("hide_footer").style.display = "none";
+
+
+        // THIS SHOWS THE Clear Searchbar BUTTON ON A BAD  SEARCH
+        document.getElementById("hide_clear_button").style.display = "flex";
 
         /*
         // This displays the message "No Results Found" and outputs it  on the errorOutput id
@@ -52,7 +70,7 @@ window.onload = (event) => {
 
 
 
-    // THIS DOWN GETS JUST THE RECORD NAMES CLASS        find-records
+
 
 
 
@@ -61,33 +79,6 @@ window.onload = (event) => {
 
 
 
-
-    for (const nameElement of recordNamesFromDOM) {
-
-    // store name text and convert to lowercase
-    let name = nameElement.textContent.toLowerCase();
-
-
-    // compare current name to search input
-    if (name.includes(searchQuery)) {
-      // found name matching search, display it
-      nameElement.style.display = "block";
-
-      // This displays no message in the output errorOutput
-      document.getElementById("errorOutput").innerHTML = "";
-    }
-    else if(!name.includes(searchQuery)){
-      // no match, don't display name
-      nameElement.style.display = "none";
-
-      /*
-      // This displays the message "No Results Found" and outputs it  on the errorOutput id
-      document.getElementById("errorOutput").innerHTML = "No Records Found";
-      */
-    }
-
-
-    }
 
 
     }
@@ -99,6 +90,16 @@ window.onload = (event) => {
 };
 
 
+
+
+
+  function changeFooterColor(){
+    let colorChangeText = document.getElementById("copyright");
+    let colorChangeFooter = document.getElementById("hide_footer");
+
+    colorChangeText.style.color = "#f6dbac";
+    colorChangeFooter.style.backgroundColor = "#f6dbac";
+  }
 
 
 
