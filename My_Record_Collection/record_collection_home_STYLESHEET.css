@@ -133,9 +133,13 @@ nav{
 }
 
 /*  This changes the No results found output for search bar */
+/*
 #errorOutput{
-
+  
 }
+*/
+
+
 /* SEARCH SEARCH SEARCH    SEARCH BAR    SEARCH SEARCH SEARCH */
 
 
@@ -174,6 +178,9 @@ h1 {
 
 
 /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ MODALS WITH CARD OF WORK INSIDE $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+
+
+
 
 
 
@@ -564,8 +571,10 @@ h2 a:hover{
   color: #000000;
 }
 
-.anchor_links:hover, .anchor_links:focus{
-  color: #176e82;
+/* This is for the anchor links that shoot you up or down changes what happens on a hover */
+.anchor_links:hover a, .anchor_links:focus a{
+  color: black;
+  text-shadow: 1px 1px 0px #ffffff, 2px 2px 0px #ffffff;
 }
 
 /* <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! ANCHOR TAGS !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! --> */

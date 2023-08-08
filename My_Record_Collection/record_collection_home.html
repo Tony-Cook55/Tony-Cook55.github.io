@@ -59,11 +59,18 @@
 
   <nav class="navbar navbar-expand-lg navbar-light bg-light          sticky-top">
     <a class="navbar-brand" href="record_collection_home.html"><h1>My Records</h1></a>
+
+
+    <!--    UNCOMMENT THIS AND HIDE BUTTON BELOW THIS TO HAVE A ALWAYS SHOWING SEARCHBAR
+    <form class="d-flex" >
+      <input class="form-control    search_bar" type="search" id="searchInput"  placeholder="Search Records"  aria-label="Search">
+    </form>
+    -->
+
     <button class="navbar-toggler   custom-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span ><i class="fa-solid fa-compact-disc fa-spin"></i></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-
 
 
       <!-- ```````````````````````  SEARCH BAR ``````````````````````````````````-->
@@ -85,10 +92,22 @@
 
 
 
-
   <div class="column text-center">
     <h1 class=" top-name   artists-name       find-records"    id="back_to_top">My Record Collection</h1>
   </div>
+
+
+
+      <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! ANCHOR TAGS !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+      <div class=" text-center            find-records" >
+        <!-- This sends the user to the back_to_top id. Its set to the top h1-->
+        <div class="col">
+          <h2 class="anchor_links">
+            <a class="anchor_links" href="#down_to_bottom">Down To Bottom</a>
+          </h2>
+        </div>
+      </div>
+  <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! ANCHOR TAGS !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
 
 
 
@@ -2571,8 +2590,8 @@
 
 
 <!-- This displays the error message of "No Records Found" after a failed search -->
-<div class="text-center">
-  <h1 id="errorOutput" class="no_records_error">&nbsp;</h1>
+<div class="text-center      ">
+  <h1 id="errorOutput" class="no_records_error"       style="display: none;">&nbsp;</h1>
 </div>
 <!--  SEARCH SEARCH SEARCH This is the things for the search bar SEARCH SEARCH SEARCH -->
 
@@ -2580,7 +2599,7 @@
 
                                                       <!-- THIS HIDES THE BUTTON SO IT CAN BE SHOWN ON A BAD SEARCH-->
 <div class="modal-footer"   id="hide_clear_button"     style="display: none;">
-  <button type="button" class="btn btn-secondary" onclick="clearSearchBar()" data-dismiss="modal">
+  <button type="button" id="clear_search" class="btn btn-secondary  " onclick="clearSearchBar()" data-dismiss="modal">
     Clear Searchbar
   </button>
 </div>
@@ -2592,31 +2611,34 @@
 
 
 
-<!-- THIS ID WILL BE CALLED ON A FAILED SEARCH AND WILL HIDE ALL ITEMS BELOW THIS DIV -->
-<div id="hide_footer">
-
-
     <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! ANCHOR TAGS !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
-    <div class=" text-center ">
-                                  <!-- This sends the user to the back_to_top id. Its set to the top h1-->
-        <div class="col">
-          <h2 class="anchor_links">
-            <a class="anchor_links  " href="#back_to_top">Back To Top</a>
-          </h2>
-        </div>
-
-    </div>
-    <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! ANCHOR TAGS !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
-
+    <div class=" text-center           find-records">
+      <!-- This sends the user to the back_to_top id. Its set to the top h1-->
+<div class="col">
+<h2 class="anchor_links">
+<a class="anchor_links  " href="#back_to_top" id="down_to_bottom">Back To Top</a>
+</h2>
+</div>
+</div>
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! ANCHOR TAGS !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
 
 
 
+
+
+
+
+
+
+
+<!-- THIS ID WILL BE CALLED ON A FAILED SEARCH AND WILL HIDE ALL ITEMS BELOW THIS DIV -->
+<div id="hide_footer"    class="find-records"> <!-- find-records  allows things to be hidden then reappear if not found-->
 
 
 
 
       <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Footer %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
-      <footer class="text-center text-white   mt-5   ">
+      <footer class="text-center text-white   mt-5   find-records">
 
         <!-- Copyright -->
         <div class="text-center p-3 copyright">
