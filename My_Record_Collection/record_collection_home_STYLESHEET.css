@@ -22,6 +22,7 @@ nav{
   background-repeat: no-repeat;
   background-size: cover;
   */
+
 }
 
 
@@ -79,17 +80,20 @@ nav{
 /* SEARCH SEARCH SEARCH    SEARCH BAR    SEARCH SEARCH SEARCH */
 
 /* This is the placeholder text inside the search bar */
-.search_Bar_font{
+.search_bar{
   font-family: 'Shrikhand', cursive;
 
   margin-left: 3vw;
 
   width: 85vw;
+
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 
 @media screen and (min-width: 600px) {
-  .search_Bar_font{
+  .search_bar{
     margin-left: 6.5vw;
 
     
@@ -420,7 +424,7 @@ h2 a:hover{
 }
 @media screen and (min-width: 600px) {
   .top-name{
-    padding-top: 200px;
+    padding-top: 80px;
   }
 }
 
@@ -450,7 +454,7 @@ h2 a:hover{
 /* The actual name of the record */
 .record-name{
   color: #f6dbac;
-  font-size: 6vw;
+  font-size: 4.5vw;
 }
 
 @media screen and (min-width: 600px) {
