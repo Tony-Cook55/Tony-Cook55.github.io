@@ -506,7 +506,9 @@ h2 a:hover{
 
 
 .record-pic:hover{
-  transform:scale(1.05);
+  transform:scale(1.25);
+
+  padding-top: 20px;
 }
 
 
