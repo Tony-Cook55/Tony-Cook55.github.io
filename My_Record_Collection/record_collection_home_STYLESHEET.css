@@ -23,6 +23,7 @@ nav{
   background-size: cover;
   */
 
+
 }
 
 
@@ -71,6 +72,24 @@ nav{
   color: white;
   /*  border: 3px solid white;   */
 }
+
+
+
+
+/* This adds some margin to allow space to be had on a successful search of a artist */
+.space-on-search{
+  margin-top: 60px;
+}
+
+
+@media screen and (min-width: 600px) {
+  .space-on-search{
+    margin-top: 100px;
+  }
+}
+
+
+
 /* ~~~~~~~~~~~~~~~~~~ NAVBAR ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 
@@ -273,7 +292,7 @@ p{
 
 
 /* same background image as the navbar */
-  background-image: url("pictures/record_label_pic/70s-bold-multicolor-stripes-retro-wallpaper-mural-Plain-scaled.png");
+  /*    background-image: url("pictures/record_label_pic/70s-bold-multicolor-stripes-retro-wallpaper-mural-Plain-scaled.png");   */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -420,7 +439,7 @@ h2 a:hover{
 
 /* this is the first name shown on the top of screen to allow room for sticky navbar */
 .top-name{
-  padding-top: 100px;
+  padding-top: 40px;
 }
 @media screen and (min-width: 600px) {
   .top-name{

@@ -52,7 +52,7 @@ window.onload = (event) => {
 
 
 
-    // THIS DOWN GETS JUST THE RECORD NAMES CLASS    recordNames
+    // THIS DOWN GETS JUST THE RECORD NAMES CLASS        find-records
 
 
 
