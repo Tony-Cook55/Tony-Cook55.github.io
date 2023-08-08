@@ -92,7 +92,6 @@ window.onload = (event) => {
 
 
 
-
   function changeFooterColor(){
     let colorChangeText = document.getElementById("copyright");
     let colorChangeFooter = document.getElementById("hide_footer");
