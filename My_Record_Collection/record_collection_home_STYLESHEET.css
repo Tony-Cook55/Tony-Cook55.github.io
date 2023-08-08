@@ -15,16 +15,28 @@ body{
 
 /* adds the background picture for the navbar */
 nav{  
-  background-image: url("pictures/backgrounds/spining_record_rainbow.webp");
-  /*
-  background-attachment: fixed;
-  background-position: center;
+  background-image: url("pictures/backgrounds/70s_pattern_crazy.png");
+  
+  /*  background-attachment: fixed;
+  background-position: center;     */
   background-repeat: no-repeat;
   background-size: cover;
-  */
-
-
+  
 }
+
+@media screen and (min-width: 600px) {
+  nav{  
+    background-image: url("pictures/backgrounds/70s_pattern_crazy.png");
+    
+    background-attachment: fixed;  
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+  }
+}
+
+
 
 
 /* This changes the top text says "My Records" in the nav*/
@@ -38,7 +50,7 @@ nav{
   /* font-family: Futura, Helvetica, sans-serif;  */
   font-size: 8vw;
   
-  color: #E63E23;
+  color: #60C3A7;
   text-shadow: 2px 2px 0px #000000, 4px 4px 0px #000000;    
   
 }
