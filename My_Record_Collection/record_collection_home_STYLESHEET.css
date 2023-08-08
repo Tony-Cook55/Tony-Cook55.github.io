@@ -501,6 +501,12 @@ h2 a:hover{
   max-width: 100%;
   height: auto;
 
+
+}
+
+
+.record-pic:hover{
+  transform:scale(1.05);
 }
 
 
@@ -509,6 +515,10 @@ h2 a:hover{
   .record-pic{
     max-width: 100%;
     height: auto;
+  }
+
+  .record-pic:hover{
+    transform:scale(1.1);
   }
 
 }
