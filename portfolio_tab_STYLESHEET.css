@@ -142,8 +142,8 @@ body{
 /* Makes the images of the website preview within the cards shrink accordingly */
 .card-img-top {
   width: 100%;
-  height: 25vw;
-  object-fit: cover;
+  height: 35vw;
+  object-fit: fill;
 }
 
 
@@ -162,7 +162,7 @@ body{
 
   .card-img-top { 
     width: 100%;
-    height: 45vw;
+    height: 30vw;
     object-fit: fill;
   }
 

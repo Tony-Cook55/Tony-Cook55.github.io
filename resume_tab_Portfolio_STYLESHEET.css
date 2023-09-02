@@ -112,10 +112,16 @@ nav{
 
 /* The actual resume picture  */
 .resume_Pic{
-  width: 80%;
+  width: 90%;
 
 }
 
+@media screen and (min-width: 600px) {
+  .resume_Pic{
+    width: 40%;
+  }
+  
+}
 
 /* THE BUTTON THAT SHOWS THE RESUME PIC ON AND OFF */
 
