@@ -6,16 +6,19 @@ body{
 }
 
 .call-me{
-  background-color: #259fa4;
-}
-
-.email{
   background-color: #df3b30;
 }
 
-.discord{
+.email{
+  background-color: #ce763b;
+}
+
+.linkedin{
   background-color: #efbb4a;
-  color: #f6dbac;
+}
+
+.github{
+  background-color: #259fa4;
 }
 
 .contact_infos_containers{
