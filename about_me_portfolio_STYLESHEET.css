@@ -155,6 +155,14 @@ body{
   padding-left: 25px;
   padding-right: 25px;
 }
+.headshot-pic{
+  width: 60%;
+
+  padding-top: 30px;
+  
+  padding-left: 25px;
+  padding-right: 25px;
+}
 
 /* code for both the text items next to the pictures */
 .both-texts{

@@ -100,7 +100,25 @@
 <div class="col">
 
 
-<!-- 11111111111111111111111111 PICTURE OF ME IN FORKLIFT AND TEXT 11111111111111111111111111111 -->
+<!-- 11111111111111111111111111 PICTURE OF ME PROFESSIONAL 11111111111111111111111111 -->
+<div class="row tennis">
+
+  <div class="both-texts    col-md-6 ml-auto d-flex align-items-center justify-content-center mt-5  mt-md-0">
+    <p>
+      My Name Is Tony Cook. I am a <span id="age"></span> old Web Developer. I graduated Ranken Technical College
+      May 3rd, 2024.
+    </p>
+</div>
+  <div class="col-md-6">
+      <img alt="Head Shot" class="img-fluid headshot-pic" src="pictures/about_me/professional_headshot.png">
+  </div>
+
+</div>
+<!-- 111111111111111111111111111 PICTURE OF ME PROFESSIONAL 111111111111111111111111111 -->
+
+
+
+<!-- 2222222222222222222222222222222 PICTURE OF ME IN FORKLIFT AND TEXT 2222222222222222222222222222222 -->
   <div class="row forklift">
 
     <div class="col-md-6 ">
@@ -108,17 +126,17 @@
     </div>
 
     <div class="both-texts col-md-6 ml-auto d-flex align-items-center justify-content-center mb-5 mt-4 mt-md-0">
-        <p>I enjoy several outdoor activities like <em>Exploring, Hiking, Four-Wheeling, Paintball, and Skateboarding</em>. Here is me in a forklift that I found one day.
+        <p>I enjoy several outdoor activities like <em>Hiking, Four-Wheeling, Paintball, and Skateboarding</em>. Here is me in a forklift that I found one day.
           <!-- &#40;<span class="not-certified">Not Forklift Certified</span><span class="yet"> Yet...</span>&#41; --></p>
     </div>
 
   </div>
-<!-- 11111111111111111111111111 PICTURE OF ME IN FORKLIFT AND TEXT 11111111111111111111111111111 -->
+<!-- 2222222222222222222222222222222 PICTURE OF ME IN FORKLIFT AND TEXT 2222222222222222222222222222222 -->
 
 
 
 
-<!-- 22222222222222222222222222 PICTURE OF TONY HAWK AND TEXT 2222222222222222222222222222222 -->
+<!-- 333333333333333333333333333333 PICTURE OF TONY HAWK AND TEXT 333333333333333333333333333333 -->
   <div class="row tennis">
 
     <div class="both-texts    col-md-6 ml-auto d-flex align-items-center justify-content-center mt-5  mt-md-0">
@@ -129,7 +147,7 @@
     </div>
 
   </div>
-<!-- 22222222222222222222222222 PICTURE OF TONY HAWK AND TEXT 2222222222222222222222222222222 -->
+<!-- 333333333333333333333333333333 PICTURE OF TONY HAWK AND TEXT 333333333333333333333333333333 -->
 
 
 
@@ -307,7 +325,22 @@
 
 
 
+<!-- <span id="age"></span> -->
+ <!-- Voodoo magic to make my age auto update whenever its my birthday ill be honest I straight ripped this from the internet -->
+ <script>
+  var birth = new Date('2004-06-15');
+  var now = new Date();
+  var difference = now - birth;
+  // Dates are set from 1970, so remove that to get the year 
+  var age = new Date(difference).getFullYear() - 1970
 
+  var span = document.getElementById('age');
+  span.innerHTML = age;
+
+
+
+  </script>
+  <!-- Voodoo magic -->
 
 
     <!-- Optional JavaScript -->
