@@ -238,6 +238,17 @@ body{
   padding-left: 25px;
   padding-right: 25px;
 }
+.headshot-pic{
+  width: 60%;
+
+  padding-top: 30px;
+  
+  margin-left: 150px;
+  margin-right: 150px;
+
+  padding-left: 25px;
+  padding-right: 25px;
+}
 
 /* code for both sets of text next to the pictures */
 .both-texts{
